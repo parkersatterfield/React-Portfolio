@@ -1,0 +1,28 @@
+/* Colors  */
+:root {
+    --blue: #4151CA;
+    --darkGray: #484554;
+    --lightGray: #ACA9BB;
+    --red: #BF0E2B;
+    --orange: #FF5759;
+}
+
+* {
+    font-family: 'Barlow', sans-serif;
+}
+
+p {
+    text-align: left;
+    color: var(--lightGray);
+    font-family: 'Linden Hill', serif; 
+
+}
+
+.bio {
+    padding: 40px;
+    background-color: var(--blue);
+}
+
+.bio h4 {
+    color: var(--lightGray)
+}

@@ -1,11 +1,10 @@
 import Nav from '../Nav/Nav'
+import './Header.css'
 
 function Header() {
     return (
-        <div>
-            <h1>Parker Satterfield</h1>
-            <img type='svg' src="../../assets/images/bg.svg" alt="bg" />
-            <Nav />
+        <div className = "header">
+            <Nav /> 
         </div>
     )
 }

@@ -1,0 +1,28 @@
+/* Colors  */
+:root {
+    --blue: #4151CA;
+    --darkGray: #484554;
+    --lightGray: #ACA9BB;
+    --red: #BF0E2B;
+    --orange: #FF5759;
+}
+
+.footer{
+    background-color: var(--blue);
+    padding-left: 40px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+}
+
+.footer h4 {
+    color: var(--orange);
+    margin: 0;
+    padding-bottom: 20px;
+}

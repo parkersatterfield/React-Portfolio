@@ -1,3 +1,12 @@
+/* Colors  */
+:root {
+  --blue: #4151CA;
+  --darkGray: #484554;
+  --lightGray: #ACA9BB;
+  --red: #BF0E2B;
+  --orange: #FF5759;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +45,28 @@
     transform: rotate(360deg);
   }
 }
+
+/* ///////////////////////////////// */
+.Bio {
+  background-color: var(--blue);
+} 
+
+.projectContainer {
+  background-color: var(--blue);
+  padding:40px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  background-color: var(--darkGray);
+  border-radius: 15px;
+}
+  
+.main { grid-area: 1 / 1 / 3 / 2; }
+.sub1 { grid-area: 1 / 2 / 2 / 3; }
+.sub2 { grid-area: 2 / 2 / 3 / 3; }
+
