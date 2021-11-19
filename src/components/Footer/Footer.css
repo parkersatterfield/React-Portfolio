@@ -3,6 +3,7 @@
     --blue: #4151CA;
     --darkGray: #484554;
     --lightGray: #ACA9BB;
+    --light: #c4c4c4;
     --red: #BF0E2B;
     --orange: #FF5759;
 }
@@ -18,7 +19,12 @@
     align-content: center;
     padding-right: 40px;
     padding-left: 40px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
+}
+
+.links a {
+    color: var(--light);
+
 }
 
 .footer h4 {

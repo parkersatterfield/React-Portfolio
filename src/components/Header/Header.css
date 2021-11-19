@@ -10,3 +10,15 @@ font-family: 'Linden Hill', serif; */
 --orange: #FF5759;
 }
 
+.header {
+    display:flex;
+    flex: column;
+    align-content: center;
+}
+
+@media screen and (max-width: 420px) {
+    .App {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

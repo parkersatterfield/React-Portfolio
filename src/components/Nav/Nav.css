@@ -7,25 +7,22 @@
     --orange: #FF5759;
 }
 
-li {
-    display: inline;
-    margin: 10px;
-}
-
 a, a:visited {
     color: var(--darkGray);
     text-decoration: none;
     font-family: 'Linden Hill', serif; 
-
 }
 
 .nav {
+    display: flex;
+    justify-content: space-around;
     background-color: #c4c4c4;
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
     /* floating header */
-    position: static;
+    position: center;
+    align-self: center;
 }
 
 
@@ -50,4 +47,8 @@ h4 {
     color: var(--orange);
     font-size: 18pt;
     margin-top: 5px;
+}
+
+.hero {
+    background-image: ;
 }

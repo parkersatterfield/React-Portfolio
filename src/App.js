@@ -4,18 +4,21 @@ import Project from './components/Project/Project'
 import Footer from './components/Footer/Footer'
 import Bio from './components/Bio/Bio';
 
+// Project Images
+import cmsImage from "./images/CMS.png"
+import reloc8Image from "./images/Reloc8.png"
+import weatherImage from "./images/Weather.png"
+
+
 // Reloc8 Project Info
-const reloc8Image = "../../assets/images/Reloc8.png"
 const reloc8Name = "Reloc8"
 const reloc8Link = "https://parkersatterfield.github.io/Project-1/"
 
 // Weather App Project Info
-const weatherImage = "./assets/images/Weather.png"
 const weatherName = "Weather App"
 const weatherLink = "https://parkersatterfield.github.io/Weather-Dashboard/"
 
 // CMS Project Info
-const cmsImage = "./assets/images/CMS.png"
 const cmsName = "Employee Tracker CMS"
 const cmsLink = "https://github.com/parkersatterfield/Employee-Tracker-CMS"
 
@@ -27,17 +30,16 @@ function App() {
       <div className="projectContainer">
         <h4>Projects</h4>
         <div className="projects">
-          <div className = 'main'>
+          <div className = 'sub1'>
             <Project projectImage={reloc8Image} projectName={reloc8Name} projectLink={reloc8Link} />
           </div>
-          <div className = 'sub1'>
+          <div className = 'main'>
             <Project projectImage={weatherImage} projectName={weatherName} projectLink={weatherLink}/>
           </div>
           <div className = 'sub2'>
             <Project projectImage={cmsImage} projectName={cmsName} projectLink={cmsLink}/>
           </div>
-      </div>
-        
+        </div>
       </div>
       <Footer />
     </div>

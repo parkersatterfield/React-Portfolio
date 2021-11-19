@@ -2,6 +2,7 @@
 :root {
     --blue: #4151CA;
     --darkGray: #484554;
+    --light: #c4c4c4;
     --lightGray: #ACA9BB;
     --red: #BF0E2B;
     --orange: #FF5759;
@@ -13,16 +14,37 @@
 
 p {
     text-align: left;
-    color: var(--lightGray);
+    color: var(--light);
     font-family: 'Linden Hill', serif; 
-
+    font-size: 20px;
 }
 
 .bio {
     padding: 40px;
     background-color: var(--blue);
+    align-self: flex-start;
 }
 
 .bio h4 {
-    color: var(--lightGray)
+    color: var(--light)
+}
+
+.bioContainer {
+    display: flex;
+    background-image: './blob.svg';
+}
+
+.bioContainer img { 
+    height: 100px;
+    object-fit: cover; 
+    border-radius: 50px;
+    clip-path: circle(50px at 50px 50px);
+}
+
+
+
+@media screen and (max-width: 420px) {
+    h1{
+        font-size: 50px;
+    }
 }
