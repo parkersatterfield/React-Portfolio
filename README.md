@@ -8,8 +8,8 @@
 ![Mock Up](./mockup.png) 
 
 ## Links
-Github: https://github.com/parkersatterfield/Budget-Tracker-PWA-
-Live: https://budgey-track.herokuapp.com/
+Github: https://github.com/parkersatterfield/react-portfolio
+Live: https://parkersatterfield.github.io/react-portfolio/
 
 ## Table of Contents 
 
@@ -28,15 +28,15 @@ Live: https://budgey-track.herokuapp.com/
 No install required.
 ## Usage 
 
-Use this app to track you transactions.
+Hire me!
 
 ## Contributing 
 
-Georgia Tech Coding Boot Camp teaching staff built the infrastructure of this application, while students were asked to refactor it into a PWA.
+Me and my first React App.
 
 ## Test 
 
-There are no tests in this app.
+None.
 
 ## Questions 
 
