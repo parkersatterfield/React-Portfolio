@@ -1,49 +1,29 @@
 import './App.css';
-import Header from './components/Header/Header'
-import Project from './components/Project/Project'
-import Footer from './components/Footer/Footer'
-import Bio from './components/Bio/Bio';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-// Project Images
-import cmsImage from "./images/CMS.png"
-import reloc8Image from "./images/Reloc8.png"
-import weatherImage from "./images/Weather.png"
-
-
-// Reloc8 Project Info
-const reloc8Name = "Reloc8"
-const reloc8Link = "https://parkersatterfield.github.io/Project-1/"
-
-// Weather App Project Info
-const weatherName = "Weather App"
-const weatherLink = "https://parkersatterfield.github.io/Weather-Dashboard/"
-
-// CMS Project Info
-const cmsName = "Employee Tracker CMS"
-const cmsLink = "https://github.com/parkersatterfield/Employee-Tracker-CMS"
+// Components
+import Nav from './components/Nav/Nav'
+import Home from './components/Home/Home'
+import Contact from './components/Contact/Contact'
+import MyWork from './components/MyWork/MyWork'
+import About from './components/About/About'
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Bio className="bio" />
-      <div className="projectContainer">
-        <h4>Projects</h4>
-        <div className="projects">
-          <div className = 'sub1'>
-            <Project projectImage={reloc8Image} projectName={reloc8Name} projectLink={reloc8Link} />
-          </div>
-          <div className = 'main'>
-            <Project projectImage={weatherImage} projectName={weatherName} projectLink={weatherLink}/>
-          </div>
-          <div className = 'sub2'>
-            <Project projectImage={cmsImage} projectName={cmsName} projectLink={cmsLink}/>
-          </div>
-        </div>
+    <Router basename = "/">
+      <div>
+        <Nav />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/mywork" element={<MyWork />} />
+          <Route exact path="/contact" element={<Contact />} />
+        </Routes>
       </div>
-      <Footer />
-    </div>
-  );
+    </Router>
+    
+  )
 }
 
 export default App;

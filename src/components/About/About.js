@@ -1,7 +1,7 @@
-import './Bio.css';
-import selfPortrait from './headshot.jpg';
+import './About.css';
+import selfPortrait from '../../images/headshot.jpg';
 
-function Bio() {
+function Home() {
     return (
         <div className="bio">
             <h4>About Me</h4>
@@ -17,4 +17,4 @@ function Bio() {
     )
 }
 
-export default Bio;
+export default Home;

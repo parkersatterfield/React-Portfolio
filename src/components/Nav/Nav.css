@@ -7,7 +7,7 @@
     --orange: #FF5759;
 }
 
-a, a:visited {
+.link, a, a:visited {
     color: var(--darkGray);
     text-decoration: none;
     font-family: 'Linden Hill', serif; 
@@ -23,6 +23,7 @@ a, a:visited {
     /* floating header */
     position: center;
     align-self: center;
+    max-width: 350px;
 }
 
 
