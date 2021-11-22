@@ -6,7 +6,7 @@ function Home() {
         <div className="bio">
             <h4>About Me</h4>
             <div className="bioContainer">
-              <img src={selfPortrait} alt="Headshot" />
+                <img src={selfPortrait} alt="Headshot" />
                 <p>Hi, I'm Parker. I graduated from Auburn University in 2019 with a degree in biological systems engineering
                 and a minor in business. After a short stent as an engineering consultant at a firm in Atlanta, I left
                 to start my own company, Dibs. Dibs is a social media and seed funding platform for early stage

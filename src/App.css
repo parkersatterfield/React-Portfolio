@@ -7,5 +7,6 @@
   --orange: #FF5759;
 }
 
-
-
+body {
+  background-color: var(--lightGray);
+}

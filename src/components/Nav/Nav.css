@@ -11,6 +11,7 @@
     color: var(--darkGray);
     text-decoration: none;
     font-family: 'Linden Hill', serif; 
+    padding: 5px;
 }
 
 .nav {
@@ -20,27 +21,8 @@
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
-    /* floating header */
     position: center;
-    align-self: center;
     max-width: 350px;
-}
-
-
-.header {
-    display: flex;
-    margin: 40px;
-}
-
-body {
-    background-color: var(--lightGray);
-}
-
-h1 {
-    text-align: left;
-    color: var(--darkGray);
-    font-size: 50pt;
-    margin-bottom: 5px;
 }
 
 h4 {
@@ -50,6 +32,13 @@ h4 {
     margin-top: 5px;
 }
 
-.hero {
-    background-image: ;
+.main {
+    margin-top: 40px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-style: solid;
 }

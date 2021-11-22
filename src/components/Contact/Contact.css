@@ -1,6 +1,7 @@
 /* Colors  */
 :root {
-    --blue: #4151CA;
+    --blue: #4f62ec;
+    --blueHover: #4151CA;
     --darkGray: #484554;
     --lightGray: #ACA9BB;
     --light: #c4c4c4;
@@ -8,27 +9,100 @@
     --orange: #FF5759;
 }
 
-.footer{
-    background-color: var(--blue);
-    padding-left: 40px;
+.formContainer {
+    display:flex;
+    justify-content: center;
+}
+
+.linkContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    justify-content: space-between;
+    background-color: var(--lightGray);
+    margin: 20px;
 }
 
 .links {
+    padding: 20px;
+    width: 58.5vw;
+    background-color: var(--light);
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.linksList {
     display: flex;
     justify-content: space-around;
-    align-content: center;
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-bottom: 60px;
 }
 
 .links a {
-    color: var(--light);
-
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 14pt;
+    justify-content: space-around;
+    color: var(--orange)
 }
 
-.footer h4 {
+.contact h4 {
     color: var(--orange);
-    margin: 0;
-    padding-bottom: 20px;
+}
+
+.form {
+    background-color: var(--orange);
+    padding: 10px;
+    margin: 10px;
+    width: 60vw;
+    height: fit-content;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.form h4 {
+    color: var(--darkGray);
+    text-align: center;
+    font-size: 24pt;
+}
+
+input, textarea {
+    background-color: var(--lightGray);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+    color: var(--darkGray);
+}
+
+.buttonContainer {
+    display:flex;
+    justify-content: center;
+}
+
+.multi button {
+    background-color: var(--blue);
+    color: var(--light);
+    display: center;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+}
+
+.multi button:hover {
+    background-color: var(--blueHover);
+}
+
+.singles {
+    display: flex;
+}
+
+.singles input {
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.multi textarea {
+    width: 97.5%;
+    height: 150px;
 }

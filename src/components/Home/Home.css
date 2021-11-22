@@ -12,20 +12,41 @@
     font-family: 'Barlow', sans-serif;
 }
 
+
 .home {
-    padding: 5% 5% 5% 10%;
+    position: relative;
+    left: 10%;
+    top: 20%;
+}
+
+.home h1 {
+    color: var(--darkGray);
+    font-size: 90px;
+    margin: 0;
+    padding: 0;
 }
 
 .home h4 {
     color: var(--blue);
 }
 
-@media screen and (max-width: 500px) {
-    h1{
-        font-size: 50px;
-    }
-}
-
 .bg {
     height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+    .home h1{
+        font-size: 60px;
+    }
+
+    .home {
+        position: relative;
+        left: 10%;
+        top: 10%;
+    }
+
+    .bg {
+        background-position: center;
+    }
+    
 }

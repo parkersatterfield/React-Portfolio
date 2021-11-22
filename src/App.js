@@ -13,7 +13,9 @@ function App() {
   return (
     <Router basename = "/">
       <div>
-        <Nav />
+        <div className="main">
+          <Nav className="nav"/> 
+        </div>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/about" element={<About />} />
