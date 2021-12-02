@@ -13,11 +13,11 @@ function Home() {
             <div className="home">
                 <h1>Hello and welcome</h1>
                 <h4>to my portfolio page</h4>
-                <button>
-                    <Link to={'/mywork'}>
+                <Link to={'/mywork'}>
+                    <button>
                         See My Work!
-                    </Link>
-                </button>
+                    </button>
+                </Link>
             </div>
         </div>
     )

@@ -1,6 +1,7 @@
 /* Colors  */
 :root {
-    --blue: #4151CA;
+    --blue: #4f62ec;
+    --blueHover: #4151CA;
     --darkGray: #484554;
     --light: #c4c4c4;
     --lightGray: #ACA9BB;
@@ -11,7 +12,6 @@
 * {
     font-family: 'Barlow', sans-serif;
 }
-
 
 .home {
     position: relative;
@@ -26,6 +26,10 @@
     border-style: none;
     border-radius: 5px;
     padding: 10px 30px 10px 30px;
+}
+
+.home button:hover {
+    background-color: var(--blueHover);
 }
 
 .home h1 {

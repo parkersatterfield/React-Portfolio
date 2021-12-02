@@ -82,7 +82,7 @@ input, textarea {
 
 .multi button {
     background-color: var(--blue);
-    color: var(--light);
+    color: white;
     display: center;
     border-style: none;
     border-radius: 5px;
