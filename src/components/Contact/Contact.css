@@ -106,3 +106,30 @@ input, textarea {
     width: 97.5%;
     height: 150px;
 }
+
+.message {
+    display:flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    margin:5px;
+    width: fit-content;
+    justify-self: center;
+
+}
+
+.red {
+    display:flex;
+
+    justify-self: center;
+    background-color: var(--blue);
+}
+
+.green {
+    display:flex;
+
+    justify-self: center;
+    background-color: var(--red);
+}

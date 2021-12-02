@@ -1,5 +1,8 @@
 import './Contact.css'
 // import blob from './blob.svg'
+import axios from 'axios';
+import {useState} from 'react';
+
 {/* <form className="form" */}
 // style={{ 
 //     backgroundImage: `url(${blob})`, 
@@ -8,21 +11,84 @@ import './Contact.css'
 // }}>
 
 function Contact() {
+    const formId = '9oEYMWJB';
+    const formSparkUrl = `https://submit-form.com/${formId}`;
+
+    const [formState, setFormState] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const submitForm = async (event) => {
+        event.preventDefault();
+        setSubmitting(true);
+        await postSubmission();
+        setSubmitting(false);
+    }
+
+    const postSubmission = async () => {
+        const payload = {
+            name: formState.name,
+            email: formState.email,
+            message: formState.message
+        };
+
+        try {
+            const result = await axios.post(formSparkUrl, payload);
+            console.log(result);
+            setMessage({
+                text:'Thanks for the message!',
+                color: 'red'
+            });
+        } catch (error) {
+            console.error(error);
+            setMessage({
+                text: 'Something went wrong. Please try again.',
+                color: 'green'
+            })
+        }
+    }
+
+    const updateFormControl = (event) => {
+        const {id, value} = event.target;
+        const formKey = id;
+        const updatedFormState = {...formState};
+        updatedFormState[formKey]= value;
+        setFormState(updatedFormState);
+    }
+
+    const [submitting, setSubmitting] = useState(false);
+    const [message, setMessage] = useState({
+        text: '',
+        color: ''
+    });
+
     return (
         <div className = 'contact'>
-            <form className="formContainer"
-            >
-                <div className="form">
-                    <h4>Hit me up!</h4>
-                    <div className="singles">
-                        <input placeholder="Email" type="email" />
-                        <input placeholder="Name" type="text" />
-                    </div>
-                    <div className="multi">
-                        <textarea placeholder="Message" type="text" />
-                        <div className="buttonContainer">
-                            <button>Send</button>
+            <form className="formContainer">
+                <div>
+                    <div className = "form" onSubmit={submitForm}>
+                        <h4>Hit me up!</h4>
+                        {message && 
+                        <div className={`message $message.color`}>
+                            {message.text}
+                        </div>}
+                        <div className="singles">
+                            <label>Email</label>
+                            <input id='email' type="email" value={formState.email} onChange={updateFormControl}/>
+                            <label>Name</label>
+                            <input id='name'type="text" value={formState.name} onChange={updateFormControl}/>
+                        </div>
+                        <div className="multi">
+                            <label>Message</label>
+                            <textarea id='message' type="text" value={formState.message} onChange={updateFormControl}/>
+                            <div className="buttonContainer">
+                                <button disabled={submitting} onClick={submitForm}>
+                                    {submitting ? 'Submitting...' : 'Submit'}
+                                </button>
 
+                            </div>
                         </div>
                     </div>
                 </div>
