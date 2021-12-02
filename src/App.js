@@ -11,7 +11,7 @@ import About from './components/About/About'
 
 function App() {
   return (
-    <Router basename = "/">
+    <Router basename = "https://parkersatterfield.github.io/react-portfolio">
       <div>
         <div className="main">
           <Nav className="nav"/> 

@@ -19,6 +19,15 @@
     top: 20%;
 }
 
+.home button {
+    background-color: var(--blue);
+    color: var(--light);
+    display: center;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px 30px 10px 30px;
+}
+
 .home h1 {
     color: var(--darkGray);
     font-size: 90px;
