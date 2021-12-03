@@ -20,17 +20,10 @@
     justify-content: center;
 }
 
-.contact {
-    justify-content: space-between;
-    background-color: var(--lightGray);
-    margin: 20px;
-}
-
 .links {
-    padding: 20px;
-    width: 58.5vw;
-    margin-bottom: 10px;
-    border-radius: 8px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 2px;
 }
 
 .linksList {
@@ -38,7 +31,7 @@
     justify-content: space-around;
 }
 
-.links a {
+.links a, .links p {
     justify-content: space-between;
     font-weight: bold;
     font-size: 14pt;
@@ -48,13 +41,14 @@
 
 .contact h4 {
     color: var(--darkGray);
+    margin-bottom: 4px;
 }
 
 .form {
     background-color: var(--light);
     padding: 10px;
     margin: 10px;
-    width: 60vw;
+    width: 50vw;
     height: fit-content;
     border-radius: 8px;
     justify-content: center;
@@ -109,8 +103,9 @@ input:focus, textarea:focus {
 }
 
 .multi textarea {
-    width: 97.5%;
     height: 150px;
+    resize: none;
+    width: 92.5%;
 }
 
 .message {
@@ -153,6 +148,10 @@ label {
 
     .singles {
         display: block;
+    }
+
+    .form {
+        width: 80vw;
     }
     
 }

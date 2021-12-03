@@ -2,6 +2,7 @@ import './About.css';
 import selfPortrait from '../../images/headshot.jpg';
 
 function Home() {
+    document.body.style = 'background: #4151CA;';
     return (
         <div className="bio">
             <h4>About Me</h4>

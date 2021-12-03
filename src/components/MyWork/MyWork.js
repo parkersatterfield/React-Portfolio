@@ -21,11 +21,18 @@ const cmsName = "Employee Tracker CMS"
 const cmsLink = "https://github.com/parkersatterfield/Employee-Tracker-CMS"
 
 function MyWork() {    
+    document.body.style = 'background: #ACA9BB;';
     return (
-        <div className = 'projectContainer'>
-            <Project className = 'projects sub1' projectLink = {reloc8Link} projectImage={reloc8Image} projectName = {reloc8Name}/>
-            <Project className = 'projects main' projectLink = {weatherLink} projectImage={weatherImage} projectName = {weatherName}/>
-            <Project className = 'projects sub2' projectLink = {cmsLink} projectImage={cmsImage} projectName = {cmsName}/>
+        <div>
+            <h1>My Work</h1>
+            <div className='body'>
+                <div className = 'projectContainer'>
+                    <Project projectLink = {reloc8Link} projectImage={reloc8Image} projectName = {reloc8Name}/>
+                    <Project projectLink = {weatherLink} projectImage={weatherImage} projectName = {weatherName}/>
+                    <Project projectLink = {cmsLink} projectImage={cmsImage} projectName = {cmsName}/>
+                    <Project projectLink = {cmsLink} projectImage={cmsImage} projectName = {cmsName}/>
+                </div>
+            </div>
         </div>
     )
 }

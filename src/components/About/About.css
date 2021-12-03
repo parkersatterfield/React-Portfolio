@@ -20,7 +20,8 @@ p {
 }
 
 .bio {
-    height: 100vh;
+    height: 60vh;
+    overflow: hidden;
     padding: 40px;
     background-color: var(--blue);
 }
