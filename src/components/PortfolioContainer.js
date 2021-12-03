@@ -4,7 +4,6 @@ import Home from './Home/Home'
 import Contact from './Contact/Contact'
 import MyWork from './MyWork/MyWork'
 
-
 import { useState } from 'react';
 
 // Project Images
@@ -50,7 +49,6 @@ function PortfolioContainer() {
           <MyWork projectLink = {weatherLink} projectImage={weatherImage} projectName = {weatherName}/>
           <MyWork projectLink = {cmsLink} projectImage={cmsImage} projectName = {cmsName}/>
         </div>
-        console.log(currentPage)
       )
     }
 

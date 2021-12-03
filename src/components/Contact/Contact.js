@@ -1,5 +1,5 @@
 import './Contact.css'
-// import blob from './blob.svg'
+import blob from './blob.svg'
 import axios from 'axios';
 import {useState} from 'react';
 
@@ -41,6 +41,11 @@ function Contact() {
                 text:'Thanks for the message!',
                 color: 'red'
             });
+            setFormState({
+                name: '',
+                email: '',
+                message: ''
+            })
         } catch (error) {
             console.error(error);
             setMessage({
@@ -65,29 +70,38 @@ function Contact() {
     });
 
     return (
-        <div className = 'contact'>
+        <div className = 'contact'
+        style={{ 
+            backgroundImage: `url(${blob})`, 
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: '100vh'
+            }}>
             <form className="formContainer">
                 <div>
                     <div className = "form" onSubmit={submitForm}>
                         <h4>Hit me up!</h4>
                         {message && 
-                        <div className={`message $message.color`}>
+                        <div className={`message ${message.color}`}>
                             {message.text}
                         </div>}
                         <div className="singles">
-                            <label>Email</label>
-                            <input id='email' type="email" value={formState.email} onChange={updateFormControl}/>
-                            <label>Name</label>
-                            <input id='name'type="text" value={formState.name} onChange={updateFormControl}/>
+                            <div className="singleInput">
+                                <label>Email</label>
+                                <input id='email' type="email" value={formState.email} onChange={updateFormControl}/>
+                            </div>
+                            <div className="singleInput">
+                                <label>Name</label>
+                                <input id='name'type="text" value={formState.name} onChange={updateFormControl}/>
+                            </div>
                         </div>
                         <div className="multi">
                             <label>Message</label>
                             <textarea id='message' type="text" value={formState.message} onChange={updateFormControl}/>
                             <div className="buttonContainer">
-                                <button disabled={submitting} onClick={submitForm}>
+                                <button disabled={submitting || formState.message==='' || formState.name === '' || formState.email ===''} onClick={submitForm}>
                                     {submitting ? 'Submitting...' : 'Submit'}
                                 </button>
-
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 /* Colors  */
 :root {
-    --blue: #4f62ec;
+    --blue: #ffffff52;
     --blueHover: #4151CA;
     --darkGray: #484554;
     --lightGray: #ACA9BB;
@@ -12,6 +12,7 @@
 .formContainer {
     display:flex;
     justify-content: center;
+    padding: 5px;
 }
 
 .linkContainer {
@@ -28,7 +29,6 @@
 .links {
     padding: 20px;
     width: 58.5vw;
-    background-color: var(--light);
     margin-bottom: 10px;
     border-radius: 8px;
 }
@@ -43,15 +43,15 @@
     font-weight: bold;
     font-size: 14pt;
     justify-content: space-around;
-    color: var(--orange)
+    color: var(--darkGray)
 }
 
 .contact h4 {
-    color: var(--orange);
+    color: var(--darkGray);
 }
 
 .form {
-    background-color: var(--orange);
+    background-color: var(--light);
     padding: 10px;
     margin: 10px;
     width: 60vw;
@@ -67,12 +67,18 @@
 }
 
 input, textarea {
-    background-color: var(--lightGray);
+    background-color: rgb(230, 230, 230);
     margin: 10px;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
     border-style: none;
     color: var(--darkGray);
+    width: fill;
+}
+
+input:focus, textarea:focus {
+    border-style: solid;
+    border-color: var(--darkGray);
 }
 
 .buttonContainer {
@@ -97,7 +103,7 @@ input, textarea {
     display: flex;
 }
 
-.singles input {
+.singles div {
     width: 50%;
     justify-content: space-evenly;
 }
@@ -112,24 +118,41 @@ input, textarea {
     justify-content: center;
     color: white;
     text-align: center;
-    border-radius: 5px;
-    padding: 5px;
-    margin:5px;
-    width: fit-content;
+    border-radius: 3px;
+    padding: 8px;
+    margin:8px;
+    width: fill;
     justify-self: center;
 
 }
 
 .red {
     display:flex;
-
     justify-self: center;
     background-color: var(--blue);
 }
 
 .green {
     display:flex;
-
     justify-self: center;
     background-color: var(--red);
+}
+
+label {
+    color: var(--darkGray);
+    display: block;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .singles div {
+        width: 100%;
+        display: block;
+    }
+
+    .singles {
+        display: block;
+    }
+    
 }

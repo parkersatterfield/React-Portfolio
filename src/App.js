@@ -11,7 +11,7 @@ import About from './components/About/About'
 
 function App() {
   return (
-    <Router>
+    <Router basename = "/">
       <div>
         <div className="main">
           <Nav className="nav"/> 
