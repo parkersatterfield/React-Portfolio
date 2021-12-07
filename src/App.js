@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // Components
@@ -24,7 +25,6 @@ function App() {
         </Routes>
       </div>
     </Router>
-    
   )
 }
 

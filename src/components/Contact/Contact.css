@@ -24,14 +24,20 @@
     padding: 5px;
     width: 100%;
     margin-bottom: 2px;
+    width: fit-content;
 }
 
 .linksList {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    border-style: solid;
+    border-color: white;
+    border-radius: 3px;
 }
 
 .links a, .links p {
+    padding: 3px;
+    margin: 3px;
     justify-content: space-between;
     font-weight: bold;
     font-size: 14pt;
@@ -67,7 +73,7 @@ input, textarea {
     border-radius: 3px;
     border-style: none;
     color: var(--darkGray);
-    width: fill;
+    width: stretch;
 }
 
 input:focus, textarea:focus {
@@ -109,6 +115,7 @@ input:focus, textarea:focus {
 }
 
 .message {
+    visibility: collapse;
     display:flex;
     justify-content: center;
     color: white;
@@ -116,18 +123,19 @@ input:focus, textarea:focus {
     border-radius: 3px;
     padding: 8px;
     margin:8px;
-    width: fill;
+    width: stretch;
     justify-self: center;
-
 }
 
 .red {
+    visibility: visible;
     display:flex;
     justify-self: center;
     background-color: var(--blue);
 }
 
 .green {
+    visibility: visibility;
     display:flex;
     justify-self: center;
     background-color: var(--red);

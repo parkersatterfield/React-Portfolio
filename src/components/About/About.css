@@ -1,3 +1,5 @@
+
+
 /* Colors  */
 :root {
     --blue: #4151CA;
@@ -14,16 +16,14 @@
 
 p {
     text-align: left;
-    color: var(--light);
+    color: var(--darkGray);
     font-family: 'Linden Hill', serif; 
     font-size: 20px;
 }
 
 .bio {
     height: 60vh;
-    overflow: hidden;
     padding: 40px;
-    background-color: var(--blue);
 }
 
 .bio h4 {
@@ -37,17 +37,18 @@ p {
 
 .bioContainer img { 
     margin-right: 40px;
-    height: 100px;
+    height: 200px;
     width: auto;
     object-fit: cover; 
     border-radius: 50px;
-    clip-path: circle(50px at 50px 50px);
+    clip-path: circle(100px at 100px 100px);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .bioContainer {
         display: block
     }
+
     
 }
 
