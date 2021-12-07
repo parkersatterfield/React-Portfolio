@@ -1,8 +1,8 @@
 {
-  "name": "class-app",
+  "name": "psatt",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://parkersatterfield.github.io/react-portfolio/",
+  "homepage": "https://parkersatterfield.netlify.app/",
   "dependencies": {
     "@craco/craco": "^6.4.2",
     "@testing-library/jest-dom": "^5.15.0",
