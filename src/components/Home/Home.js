@@ -16,10 +16,8 @@ function Home() {
             <div className="home">
                 <h1>Hello and welcome</h1>
                 <h4>to my portfolio page</h4>
-                <Link to={'/mywork'}>
-                    <button>
-                        See My Work!
-                    </button>
+                <Link to={'/mywork'} className='myWorkButton'>
+                    See My Work!
                 </Link>
             </div>
         </div>

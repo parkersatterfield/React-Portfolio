@@ -1,11 +1,11 @@
 /* Colors  */
-:root {
+/* :root {
     --blue: #4151CA;
     --darkGray: #484554;
     --lightGray: #ACA9BB;
     --red: #BF0E2B;
     --orange: #FF5759;
-}
+} */
 
 .link, a, a:visited {
     color: var(--darkGray);

@@ -1,14 +1,3 @@
-/* Colors  */
-:root {
-    --blue: #4f62ec;
-    --blueHover: #4151CA;
-    --darkGray: #484554;
-    --light: #c4c4c4;
-    --lightGray: #ACA9BB;
-    --red: #BF0E2B;
-    --orange: #FF5759;
-}
-
 * {
     font-family: 'Barlow', sans-serif;
 }
@@ -19,17 +8,20 @@
     top: 20%;
 }
 
-.home button {
+.myWorkButton {
     background-color: var(--blue);
+    font-family: 'Barlow', sans-serif;
     color: var(--light);
     display: center;
     border-style: none;
     border-radius: 5px;
     padding: 10px 30px 10px 30px;
+    transition: 0.5s;
 }
 
-.home button:hover {
+.myWorkButton:hover{
     background-color: var(--blueHover);
+    color: var(--light)
 }
 
 .home h1 {
@@ -40,7 +32,7 @@
 }
 
 .home h4 {
-    color: var(--blue);
+    color: var(--darkGray);
 }
 
 .bg {

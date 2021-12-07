@@ -1,22 +1,25 @@
 .body {
     display: grid;
     place-items: center;
+    height: 50vh;
 }
 
 .portfolioSection h1 {
-    color: var(--blue);
+    color: var(--darkGray);
     text-align: center;
-    margin: 8px;
+    margin-bottom: 18px;
+    margin-top: 0px;
 }
 
 .project img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: cover;
+    transition: filter .5s, transform .5s;
     filter: grayscale(100%);
 }
 
-.project figcaption {
+.project figcaption { 
     color: var(--darkGray);
     position: relative;
     top:-47px;
@@ -28,15 +31,7 @@
 
 .project img:hover {
     transform: scale(1.02); 
-    transition: filter .5s, transform .5s;
     filter: grayscale(0%);
-}
-
-.project img:hover + figcaption {
-    transform: scale(1.02); 
-    transition: filter .5s, transform .5s;
-    filter: grayscale(0%);
-    display: none;
 }
 
 .projectContainer {
@@ -53,6 +48,8 @@
 }
 
 @media screen and (min-width: 900px) {
+   
+
     .projectContainer {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 200px);

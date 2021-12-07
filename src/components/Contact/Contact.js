@@ -7,7 +7,7 @@ function Contact() {
     document.body.style = `
         background-image: url(${blob}); 
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top 120% left -250px;
         background-size: 160vh;
     `;
 
@@ -102,7 +102,7 @@ function Contact() {
                             <label>Message</label>
                             <textarea id='message' type="text" value={formState.message} onChange={updateFormControl}/>
                             <div className="buttonContainer">
-                                <button disabled={submitting || formState.message==='' || formState.name === '' || formState.email ===''} onClick={submitForm}>
+                                <button className='submitButton' disabled={submitting || formState.message==='' || formState.name === '' || formState.email ===''} onClick={submitForm}>
                                     {submitting ? 'Submitting...' : 'Submit'}
                                 </button>
                             </div>
