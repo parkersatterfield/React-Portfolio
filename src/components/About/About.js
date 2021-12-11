@@ -2,8 +2,11 @@ import './About.css';
 import { Carousel } from 'bootstrap';
 import blob from './blob.svg'
 import selfPortrait from '../../images/headshot.jpg';
+import {motion} from 'framer-motion';
 
 function Home() {
+    const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
+
     document.body.style = `
         background-image: url(${blob}); 
         background-repeat: no-repeat;
@@ -12,7 +15,12 @@ function Home() {
     `;
 
     return (
-        <div className="bio">
+        <motion.div 
+            className="bio"
+            exit={{opacity: 0}}
+            initial={{opacity: 0}}
+            animate={{ opacity: 1 }}
+            transition={transition}>
             <h4>About Me</h4>
             <div className="bioContainer">
                 <img src={selfPortrait} alt="Headshot" />
@@ -22,7 +30,7 @@ function Home() {
                 startup companies to share their experiences, network, and raise money. Working on Dibs is where I was first
                 exposed to web development, and I've been learning ever since.</p>  
             </div>
-        </div>
+        </motion.div>
     )
 }
 

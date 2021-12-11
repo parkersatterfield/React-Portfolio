@@ -3,13 +3,21 @@ import resume from './Web Dev Resume.pdf'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router'
+import {motion} from 'framer-motion';
 
 function Nav() {
+    const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
+
     let location = useLocation().pathname
 
     return (
 
-        <div className = 'nav'>
+        <motion.div 
+            className = 'nav'
+            exit={{opacity: 0}}
+            initial={{opacity: 0}}
+            animate={{ opacity: 1 }}
+            transition={transition}>
             <div 
             className="navContainer">
                 <Link
@@ -43,7 +51,7 @@ function Nav() {
                 <a href={resume} target="_blank" rel="noreferrer">Resume</a>
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 

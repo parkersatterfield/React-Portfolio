@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 // Components
 import Nav from './components/Nav/Nav'
@@ -17,12 +18,14 @@ function App() {
         <div className="main">
           <Nav className="nav"/> 
         </div>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/mywork" element={<MyWork />} />
-          <Route exact path="/contact" element={<Contact />} />
-        </Routes>
+        <AnimatePresence initial={true} exitBeforeEnter>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/mywork" element={<MyWork />} />
+            <Route exact path="/contact" element={<Contact />} />
+          </Routes>
+        </AnimatePresence>
       </div>
     </Router>
   )

@@ -2,8 +2,11 @@ import './Contact.css'
 import blob from './blob.svg'
 import axios from 'axios';
 import {useState} from 'react';
+import {motion} from 'framer-motion';
 
 function Contact() {
+    const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
+
     document.body.style = `
         background-image: url(${blob}); 
         background-repeat: no-repeat;
@@ -70,7 +73,12 @@ function Contact() {
     });
 
     return (
-        <div className = 'contact'>
+        <motion.div 
+            className = 'contact'
+            exit={{opacity: 0}}
+            initial={{opacity: 0}}
+            animate={{ opacity: 1 }}
+            transition={transition}>
             <form className="formContainer">
                 <div>
                     <div className = "form" onSubmit={submitForm}>
@@ -110,7 +118,7 @@ function Contact() {
                     </div>
                 </div>
             </form>
-        </div>
+        </motion.div>
     )
 }
 

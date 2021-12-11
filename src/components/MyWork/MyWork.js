@@ -1,6 +1,7 @@
 import './MyWork.css'
 import '../Project/Project'
 import Project from '../Project/Project';
+import {motion} from 'framer-motion';
 
 // Project Images
 import cmsImage from "../../images/CMS.png"
@@ -26,6 +27,8 @@ const dibsName = "Dibs"
 const dibsLink = "https://dibsfunding.com/"
 
 function MyWork() {   
+    const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
+
     document.body.style = `
     background-image: url(${blob}); 
     background-repeat: no-repeat;
@@ -35,7 +38,12 @@ function MyWork() {
     
     // document.body.style = 'background: #ACA9BB;';
     return (
-        <div className = "portfolioSection">
+        <motion.div 
+            className = "portfolioSection"
+            exit={{opacity: 0}}
+            initial={{opacity: 0}}
+            animate={{ opacity: 1 }}
+            transition={transition}>
             <h1>My Work</h1>
             <div className='body'>
                 <div className = 'projectContainer'>
@@ -45,7 +53,7 @@ function MyWork() {
                     <Project projectLink = {cmsLink} projectImage={cmsImage} projectName = {cmsName}/>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
