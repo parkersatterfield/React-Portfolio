@@ -8,7 +8,7 @@ import {motion} from 'framer-motion';
 function Nav() {
     const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
 
-    let location = useLocation().pathname
+    let location = useLocation().pathname;
 
     return (
 
@@ -28,7 +28,7 @@ function Nav() {
                 </Link>
 
                 <Link
-                     className={(location === '/about') ? 'active' : ''}
+                    className={(location === '/about') ? 'active' : ''}
                     to={"/about"}
                     >
                     About
