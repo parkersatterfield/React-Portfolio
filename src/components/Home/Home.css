@@ -11,7 +11,7 @@
 .myWorkButton {
     background-color: var(--blue);
     font-family: 'Barlow', sans-serif;
-    color: var(--light);
+    color: whitesmoke;
     display: center;
     border-style: none;
     border-radius: 5px;
@@ -50,13 +50,19 @@
     }
 
     .home {
+        width: 88vw;
         position: relative;
         left: 10%;
         top: 10%;
+        margin: 0;
     }
 
     .bg {
         background-position: center;
+    }
+
+    .home h4 {
+        padding: 0;
     }
     
 }
