@@ -83,7 +83,7 @@ p {
 
 .aboutmemain {
     padding: 50px;
-    height: 80vh;
+    margin-bottom: 20px;
 }
 
 @media screen and (min-width: 1300px) {
