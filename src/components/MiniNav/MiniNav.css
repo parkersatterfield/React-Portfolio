@@ -1,0 +1,17 @@
+.miniNavContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.miniNavLink {
+    text-align: center;
+    padding: 6px 0px 0px 0px;
+    font-size: 14pt;
+}
+
+.miniNavActive {
+    font-size: 14pt;
+    padding: 6px 0px 0px 0px;
+    text-align: center;
+    text-decoration: underline;
+}
