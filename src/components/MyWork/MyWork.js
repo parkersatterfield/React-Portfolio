@@ -68,7 +68,7 @@ function MyWork() {
                     <Project projectLink = {reloc8Link} projectImage={reloc8Image} projectName = {reloc8Name}/>
                     <div className="desc">
                         <h4>Reloc8</h4>
-                        <p>Reloc8 was the first project that we did for bootcamp. As a team, we wanted to put together 2 APIs and throw them together in an app. Originally, we wanted to use the Zillow API and the Monster API to allow for users to search a job and then receive housing results based on the job location, but we were having some issued with both the Monster and Zillow public API keys. We ended up going with the Yelp API and hard coding a list of jobs</p>
+                        <p>Reloc8 was the first project that we did for bootcamp. As a team, we wanted to put together 2 APIs and throw them together in an app. Originally, we wanted to use the Zillow API and the Monster API to allow for users to search a job and then receive housing results based on the job location, but we were having some issued with both the Monster and Zillow public API keys. We ended up going with the Yelp API and hard coding a list of jobs.</p>
                     </div>
                 </div>
                 <div className="flexRow switch">
@@ -81,7 +81,7 @@ function MyWork() {
                 <div className="flexRow">
                     <Project projectLink = {weatherLink} projectImage={weatherImage} projectName = {weatherName}/>
                     <div className="desc">
-                        <h4>Wether Dashboard</h4>
+                        <h4>Weather Dashboard</h4>
                         <p>Building a weather app is a right of passage for front end developers. This was one of the first bootcamp assignments. We were given an image of what it was supposed to look like and the API it was supposed to use and told to build it.</p>
                     </div>
                 </div>

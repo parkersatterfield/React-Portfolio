@@ -1,17 +1,36 @@
-import './Nav.css'
-import resume from './Web Dev Resume.pdf'
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { useLocation } from 'react-router'
+import './Nav.css';
+import resume from './Web Dev Resume.pdf';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router';
 import {motion} from 'framer-motion';
-import logo from './logo.svg'
-import menu from './menu.svg'
-import MiniNav from '../MiniNav/MiniNav'
-import { useAnimation } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+import logo from './logo.svg';
+import menu from './menu.svg';
+import MiniNav from '../MiniNav/MiniNav';
+import { useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import { AnimatePresence } from 'framer-motion';
 
 function Nav() {
+    const confetti = () => {
+        confetti("tsparticles", {
+            angle: 90,
+            count: 25,
+            position: { x: 50, y: 50 },
+            spread: 90,
+            startVelocity: 60,
+            decay: 0.9,
+            gravity: 1,
+            drift: 0,
+            ticks: 200,
+            colors: ["#fff", "#f00"],
+            shapes: ["square", "circle"],
+            scalar: 1,
+            zIndex: 2000,
+            disableForReducedMotion: true
+          });
+    }
+
     const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
 
     let location = useLocation().pathname;
@@ -45,7 +64,7 @@ function Nav() {
                 initial={{opacity: 0}}
                 animate={{ opacity: 1 }}
                 transition={transition}>
-                <div className="logo">
+                <div className="logo" onClick={confetti}>
                     <img src={logo} alt="" />
                 </div>
                 <div className="menu">
