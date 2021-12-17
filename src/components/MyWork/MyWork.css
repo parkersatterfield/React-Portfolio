@@ -1,4 +1,4 @@
-.body {
+/* .body {
     display: grid;
     place-items: center;
     height: 50vh;
@@ -37,13 +37,13 @@
 .projectContainer {
     display: grid;
     gap: 10px;
-    width: 90%;
+    width: 80%;
 }
 
 @media screen and (min-width: 550px) {
     .projectContainer {
         grid-template-columns: repeat(2, 1fr);
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -74,5 +74,70 @@
     .project:nth-child(4) {
         grid-column: 4;
         grid-row: 2;
+    }
+} */
+
+/* ///////////////////// */
+.desc {
+    padding-left: 5px;
+}
+
+.desc p {
+    margin-top: 2px;
+    padding-left: 0;
+}
+
+.switch p {
+    padding-right: 5px;
+}
+
+.flexRow h4 {
+    margin: 0;
+    color: var(--darkGray)
+}
+
+img {
+    width: 100%;
+  
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.flexRow {
+    flex: column;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media screen and (min-width: 850px) {
+    img {
+        width: 400px;
+    }
+
+    .flexRow {
+        flex: row;
+        flex-wrap: nowrap;
+    }
+
+    .project {
+        width: fit-content;
+    }
+
+    .switch {
+        flex-direction: row-reverse;
     }
 }
