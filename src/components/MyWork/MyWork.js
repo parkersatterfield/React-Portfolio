@@ -43,10 +43,10 @@ function MyWork() {
     return (
         // <motion.div 
         //     className = "portfolioSection"
-        //     exit={{opacity: 0}}
-        //     initial={{opacity: 0}}
-        //     animate={{ opacity: 1 }}
-        //     transition={transition}>
+            // exit={{opacity: 0}}
+            // initial={{opacity: 0}}
+            // animate={{ opacity: 1 }}
+            // transition={transition}>
         //     <div className='body'>
                 // <div className = 'projectContainer'>
                 //     <Project projectLink = {reloc8Link} projectImage={reloc8Image} projectName = {reloc8Name}/>
@@ -57,7 +57,12 @@ function MyWork() {
         //     </div>
         // </motion.div>
 
-        <div className="mainContainer">
+        <motion.div 
+            exit={{opacity: 0}}
+            initial={{opacity: 0}}
+            animate={{ opacity: 1 }}
+            transition={transition}
+            className="mainContainer">
             <div className = 'projectContainer'>
                 <div className="flexRow">
                     <Project projectLink = {reloc8Link} projectImage={reloc8Image} projectName = {reloc8Name}/>
@@ -89,7 +94,7 @@ function MyWork() {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
     )
 }
 
