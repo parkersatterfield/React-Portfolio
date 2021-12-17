@@ -12,25 +12,6 @@ import { useInView } from 'react-intersection-observer';
 import { AnimatePresence } from 'framer-motion';
 
 function Nav() {
-    const confetti = () => {
-        confetti("tsparticles", {
-            angle: 90,
-            count: 25,
-            position: { x: 50, y: 50 },
-            spread: 90,
-            startVelocity: 60,
-            decay: 0.9,
-            gravity: 1,
-            drift: 0,
-            ticks: 200,
-            colors: ["#fff", "#f00"],
-            shapes: ["square", "circle"],
-            scalar: 1,
-            zIndex: 2000,
-            disableForReducedMotion: true
-          });
-    }
-
     const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
 
     let location = useLocation().pathname;
@@ -64,7 +45,7 @@ function Nav() {
                 initial={{opacity: 0}}
                 animate={{ opacity: 1 }}
                 transition={transition}>
-                <div className="logo" onClick={confetti}>
+                <div className="logo">
                     <img src={logo} alt="" />
                 </div>
                 <div className="menu">
@@ -121,7 +102,8 @@ function Nav() {
                     variants= {showNav}
                     initial="hidden"
                     animate="visible"
-                    exit="exit">
+                    exit="exit"
+                    onClick={()=> setNavVisibility(!navVisibility)}>
                     
                         {navVisibility && <MiniNav />}
                 </motion.div>
