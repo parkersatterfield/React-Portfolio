@@ -24,20 +24,6 @@ function MoreAbout() {
 
     const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
 
-    const scrollDown = {
-        hidden: {
-            y: "100vh",
-            opacity: 0
-        },
-        visible: {
-            y: "0"
-        },
-        exit: {
-            y: "-100vh",
-            opacity: 0
-        }
-    }
-
     const container = {
         hidden: { opacity: 1, scale: 0 },
         visible: {
@@ -69,24 +55,67 @@ function MoreAbout() {
             transition={transition}>
             <div className="flexContainer">
                 <div className="galleryContainer">
-                    <motion.img 
-                        variants={item}
-                        className="gallery" src={image2} alt="Picture of Me" />
-                    <motion.img
-                        variants={item}
-                        className="gallery" src={image1} alt="Picture of Me" />
-                    <motion.img 
-                        variants={item}
-                        className="gallery" src={image3} alt="Picture of Me" />
-                    <motion.img 
-                        variants={item}
-                        className="gallery" src={image4} alt="Picture of Me" />
-                    <motion.img 
-                        variants={item}
-                        className="gallery" src={image5} alt="Picture of Me" />
-                    <motion.img 
-                        variants={item}
-                        className="gallery" src={image6} alt="Picture of Me" />
+
+                    <div className="gallery">
+                        <div className="galleryOverlay">
+                            <h1>Fam in Seaside</h1>
+                            <p>Here we are standing in front of the chapel that we were supposed to get married in before COVID shut us down the week of. We ended up getting married in our apartment in Alpharetta a few months later.</p>
+                        </div>
+                        <motion.img 
+                            variants={item}
+                            src={image2} alt="Picture of Me" />
+                    </div>
+
+                    <div className="gallery" >
+                        <div className="galleryOverlay">
+                            <h1>Braves Game</h1>
+                            <p>This was my first week living in Atlanta, so I immediately became a bandwagon Braves Fan. Fun fact: the man in the REI shirt is my co-founder at Dibs.</p>
+                        </div>
+                        <motion.img
+                            variants={item}
+                            src={image1} alt="Picture of Me" />
+                    </div>
+
+                    <div className="gallery">
+                        <div className="galleryOverlay">
+                            <h1>Graduation</h1>
+                            <p>Now that I am an official AU Alum, this is probably one of my favorite pictures. I miss living in Auburn and living the student life every now and then. War Eagle.</p>
+                        </div>
+                        <motion.img 
+                            variants={item}
+                            src={image3} alt="Picture of Me" />
+                    </div>
+                    
+                    <div className="gallery">
+                        <div className="galleryOverlay">
+                            <h1>Harbour Island</h1>
+                            <p>My family used to come to Harbour Island before there was anything on the island. Now, about 30 years later, the island has a few resorts, marinas, and restaurants. It is still one of the less-developed tourist islands in the Bahamas.</p>
+                        </div>
+                        <motion.img 
+                            variants={item}
+                            src={image4} alt="Picture of Me" />
+                    </div>
+
+                    <div className="gallery">
+                        <div className="galleryOverlay">
+                            <h1>Napa Wedding</h1>
+                            <p>Here is wife and I at my buddy's wedding in Napa. This was a really fun trip. Congrats Matt and Suze!</p>
+                        </div>
+                        <motion.img 
+                            variants={item}
+                            src={image5} alt="Picture of Me" />
+                    </div>
+
+                    <div className="gallery">
+                        <div className="galleryOverlay">
+                            <h1>War Eagle</h1>
+                            <p>The halftime show at one of the 2021 football games. This was my first time not sitting in the student section, but we still managed to have a great time.</p>
+                        </div>
+                        <motion.img 
+                            variants={item}
+                            src={image6} alt="Picture of Me" />
+                    </div>
+
                 </div>
             </div>
           

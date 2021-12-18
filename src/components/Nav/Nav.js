@@ -45,9 +45,11 @@ function Nav() {
                 initial={{opacity: 0}}
                 animate={{ opacity: 1 }}
                 transition={transition}>
-                <div className="logo">
-                    <img src={logo} alt="" />
-                </div>
+                <Link to='/'>
+                    <div className="logo">
+                        <img src={logo} alt="" />
+                    </div>
+                </Link>
                 <div className="menu">
                     <Link to={'/mywork'} >
                         <motion.button
