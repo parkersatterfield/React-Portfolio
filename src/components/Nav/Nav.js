@@ -105,7 +105,6 @@ function Nav() {
                 
                 {navVisibility && <MiniNav />}
             </motion.div>
-
         </div>
     )
 }

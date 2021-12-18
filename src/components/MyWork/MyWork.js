@@ -68,6 +68,7 @@ function MyWork() {
                     <Project projectLink = {reloc8Link} projectImage={reloc8Image} projectName = {reloc8Name}/>
                     <div className="desc">
                         <h4>Reloc8</h4>
+                        <h5>HTML, CSS, JQuery, Yelp API</h5>
                         <p>Reloc8 was the first project that we did for bootcamp. As a team, we wanted to put together 2 APIs and throw them together in an app. Originally, we wanted to use the Zillow API and the Monster API to allow for users to search a job and then receive housing results based on the job location, but we were having some issued with both the Monster and Zillow public API keys. We ended up going with the Yelp API and hard coding a list of jobs.</p>
                     </div>
                 </div>
@@ -75,6 +76,7 @@ function MyWork() {
                     <Project projectLink = {dibsLink} projectImage={dibsImage} projectName = {dibsName}/>
                     <div className="desc">
                         <h4>Dibs</h4>
+                        <h5>Bubble.io, UI/UX, iFrame, payment integration</h5>
                         <p>While working at my first job out of school, I decided I wanted to pursue a startup project that my friend and I had been working on for a little while. Without knowing anything about web design, I decided to try and learn how to code and build an MVP using bubble.io. Dibs is an online social networking and seed funding platform for early stage startups. </p>
                     </div>
                 </div>
@@ -82,6 +84,7 @@ function MyWork() {
                     <Project projectLink = {weatherLink} projectImage={weatherImage} projectName = {weatherName}/>
                     <div className="desc">
                         <h4>Weather Dashboard</h4>
+                        <h5>OpenWeather API, HTML, CSS, Vanilla JS</h5>
                         <p>Building a weather app is a right of passage for front end developers. This was one of the first bootcamp assignments. We were given an image of what it was supposed to look like and the API it was supposed to use and told to build it.</p>
                     </div>
                 </div>
@@ -89,6 +92,7 @@ function MyWork() {
                     <Project projectLink = {cmsLink} projectImage={cmsImage} projectName = {cmsName}/>
                     <div className="desc">
                         <h4>Employee Tracker CMS</h4>
+                        <h5>Node.js, MySQL, JS, console.table</h5>
                         <p>Here is another bootcamp assignment. This was my first Node.js terminal app. It utilizes MySQL and Node. In the future, I'd like to build a deployed front end for this as a little SaaS project. </p>
                     </div>
                 </div>
