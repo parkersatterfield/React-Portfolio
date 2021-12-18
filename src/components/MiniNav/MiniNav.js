@@ -3,7 +3,7 @@ import { useLocation } from 'react-router'
 import resume from '../Nav/Web Dev Resume.pdf'
 import './MiniNav.css'
 import { useState } from 'react'
-import x from './x.png'
+import x from './x.svg'
 
 function MiniNav () {
 
