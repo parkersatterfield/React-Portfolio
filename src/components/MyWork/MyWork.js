@@ -29,34 +29,10 @@ const dibsLink = "https://dibsfunding.com/"
 function MyWork() {   
     const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
 
-    // document.body.style = `
-    // background-image: url(${blob}); 
-    // background-repeat: no-repeat;
-    // background-position: top 90% left -300px;
-    // background-size: 160vh;
-    // `;
-
     document.body.style = `
     background-image: ""; `;
     
-    // document.body.style = 'background: #ACA9BB;';
     return (
-        // <motion.div 
-        //     className = "portfolioSection"
-            // exit={{opacity: 0}}
-            // initial={{opacity: 0}}
-            // animate={{ opacity: 1 }}
-            // transition={transition}>
-        //     <div className='body'>
-                // <div className = 'projectContainer'>
-                //     <Project projectLink = {reloc8Link} projectImage={reloc8Image} projectName = {reloc8Name}/>
-                //     <Project projectLink = {dibsLink} projectImage={dibsImage} projectName = {dibsName}/>
-                //     <Project projectLink = {weatherLink} projectImage={weatherImage} projectName = {weatherName}/>
-                //     <Project projectLink = {cmsLink} projectImage={cmsImage} projectName = {cmsName}/>
-                // </div>
-        //     </div>
-        // </motion.div>
-
         <motion.div 
             exit={{opacity: 0}}
             initial={{opacity: 0}}
