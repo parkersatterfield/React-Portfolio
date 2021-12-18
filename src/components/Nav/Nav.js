@@ -1,5 +1,5 @@
 import './Nav.css';
-import resume from './Web Dev Resume.pdf';
+import resume from './Resume.pdf';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router';

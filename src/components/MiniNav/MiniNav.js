@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router'
-import resume from '../Nav/Web Dev Resume.pdf'
+import resume from '../Nav/Resume.pdf'
 import './MiniNav.css'
 import { useState } from 'react'
 import x from './x.svg'
