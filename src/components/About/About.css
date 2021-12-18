@@ -18,6 +18,9 @@ p {
 
 .bio {
     height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .bio h4 {
@@ -82,8 +85,9 @@ p {
 }
 
 .aboutmemain {
-    padding: 50px;
+    width: 85%;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 @media screen and (min-width: 1300px) {
