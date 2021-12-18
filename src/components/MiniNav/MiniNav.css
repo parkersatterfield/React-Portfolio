@@ -3,10 +3,10 @@
     flex-direction: column;
     background-color: var(--blueHover);
     box-shadow: -2px 0px 4px 1px rgba(65, 65, 65, 0.349);
-    width: 200px;
-    height: 100vh;
-    border-top-left-radius: 140px;
-    border-bottom-left-radius: 250px;
+    width: 250px;
+    height: 450px;
+    border-top-left-radius: 400px;
+    border-bottom-left-radius: 400px;
 }
 
 .miniLinkContainer {
@@ -42,6 +42,7 @@
 }
 
 .miniNavHeader {
+    margin-top: 100px;
     display: flex;
     justify-content: flex-end;
 }
