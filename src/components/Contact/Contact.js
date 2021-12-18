@@ -12,6 +12,7 @@ function Contact() {
         background-repeat: no-repeat;
         background-position: top 120% left -250px;
         background-size: 160vh;
+        transition: ease-in-out 0.5s;
     `;
 
     const formId = '9oEYMWJB';

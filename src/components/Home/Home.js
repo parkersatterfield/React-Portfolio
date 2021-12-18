@@ -11,6 +11,7 @@ function Home() {
         background-repeat: no-repeat;
         background-position: center;
         background-size: 120vh;
+        transition: ease-in-out 0.5s;
     `;
 
     return (

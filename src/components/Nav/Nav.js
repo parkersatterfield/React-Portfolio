@@ -95,20 +95,16 @@ function Nav() {
                 
             </motion.div>
             
-            <AnimatePresence 
-                initial={true}
-                exitBeforeEnter={true}>
-                <motion.div
-                    className="miniNav"
-                    variants= {showNav}
-                    initial="hidden"
-                    animate="visible"
-                    exit="exit"
-                    onClick={()=> setNavVisibility(!navVisibility)}>
-                    
-                        {navVisibility && <MiniNav />}
-                </motion.div>
-            </AnimatePresence>
+            <motion.div
+                className="miniNav"
+                variants= {showNav}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                onClick={()=> setNavVisibility(!navVisibility)}>
+                
+                {navVisibility && <MiniNav />}
+            </motion.div>
 
         </div>
     )

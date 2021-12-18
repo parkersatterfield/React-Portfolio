@@ -23,6 +23,7 @@ function Home() {
         background-repeat: no-repeat;
         background-position: right -250px  top 120%;
         background-size: 120vh;
+        transition: ease-in-out 0.5s;
     `;
 
     // const [scrollPosition, setScrollPosition] = useState((0,0));
