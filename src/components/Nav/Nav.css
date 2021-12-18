@@ -8,10 +8,11 @@
 } */
 
 .logo img {
-    width: 40px;
+    width: 50px;
+    margin-top: 4px;
 }
 
-.link, a, a:visited {
+.navLink, .navLink:visited {
     color: var(--darkGray);
     text-decoration: none;
     font-family: 'Linden Hill', serif; 
@@ -19,7 +20,7 @@
     transition: ease-in-out 0.3s;
 }
 
-a:hover{
+.navLink:hover{
     color: var(--blue);
 }
 
@@ -49,6 +50,10 @@ h4 {
 .active {
     text-decoration: underline;
     text-decoration-style: solid;
+    color: var(--darkGray);
+    font-family: 'Linden Hill', serif; 
+    padding: 5px;
+    transition: ease-in-out 0.3s;
 }
 
 .menu {
@@ -61,12 +66,17 @@ h4 {
 
 .miniNav {
     display: none;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .navButton {
     background-color: var(--blue);
     color: whitesmoke;
-    margin-right: 20px;
+    margin-right: 8px;
+    margin-bottom: 2px;
     border-radius: 5px;
     border-style: none;
     padding:  8px 10px 8px 10px;

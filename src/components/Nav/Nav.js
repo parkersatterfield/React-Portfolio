@@ -63,34 +63,34 @@ function Nav() {
                 </div>
                 <div className="navContainer">
                     <Link
-                        className={(location === '/') ? 'active' : ''}
+                        className={(location === '/') ? 'active' : 'navLink'}
                         to={"/"}
                         >
                         Home
                     </Link>
 
                     <Link
-                        className={(location === '/about') ? 'active' : ''}
+                        className={(location === '/about') ? 'active' : 'navLink'}
                         to={"/about"}
                         >
                         About
                     </Link>
 
                     <Link
-                        className={(location === '/mywork') ? 'active' : ''}
+                        className={(location === '/mywork') ? 'active' : 'navLink'}
                         to={"/mywork"}
                         >
                         My Work
                     </Link>
 
                     <Link
-                        className={(location === '/contact') ? 'active' : ''}
+                        className={(location === '/contact') ? 'active' : 'navLink'}
                         to={"/contact"}
                         >
                         Contact
                     </Link>
                     
-                    <a href={resume} target="_blank" rel="noreferrer">Resume</a>
+                    <a className="navLink" href={resume} target="_blank" rel="noreferrer">Resume</a>
                 </div>
                 
             </motion.div>
@@ -99,6 +99,7 @@ function Nav() {
                 initial={true}
                 exitBeforeEnter={true}>
                 <motion.div
+                    className="miniNav"
                     variants= {showNav}
                     initial="hidden"
                     animate="visible"
