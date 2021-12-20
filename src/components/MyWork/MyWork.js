@@ -12,7 +12,7 @@ import blob from "./blob.svg"
 
 // Reloc8 Project Info
 const reloc8Name = "Reloc8"
-const reloc8Link = "https://parkersatterfield.github.io/Project-1/"
+const reloc8Link = "https://parkersatterfield.github.io/Reloc8/"
 
 // Weather App Project Info
 const weatherName = "Weather App"
