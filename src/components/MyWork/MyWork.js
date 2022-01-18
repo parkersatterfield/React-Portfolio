@@ -8,7 +8,7 @@ import cmsImage from "../../images/CMS.png"
 import reloc8Image from "../../images/Reloc8.png"
 import weatherImage from "../../images/Weather.png"
 import dibsImage from "../../images/Dibs.png"
-import blob from "./blob.svg"
+import sibsImage from "../../images/Sibs.png"
 
 // Reloc8 Project Info
 const reloc8Name = "Reloc8"
@@ -26,6 +26,10 @@ const cmsLink = "https://github.com/parkersatterfield/Employee-Tracker-CMS"
 const dibsName = "Dibs"
 const dibsLink = "https://dibsfunding.com/"
 
+// SibsForever Project Info
+const sibsName = "SibsForever"
+const sibsLink = "https://sibsforever.org"
+
 function MyWork() {   
     const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
 
@@ -40,6 +44,15 @@ function MyWork() {
             transition={transition}
             className="mainContainer">
             <div className = 'projectContainer'>
+                <div className="flexRow switch">
+                    <Project projectLink = {sibsLink} projectImage={sibsImage} projectName = {sibsName}/>
+                    <div className="desc">
+                        <h4>Sibs Forever</h4>
+                        <h5>UpWork, Figma, React, UI/UX Design</h5>
+                        <p>Sibs was my first UpWork project, and I had a great time working with the team on this contract role. I was hired to redesign the landing page, navbar, and footer and make the design mobile responsive. I first designed the page in Figma and adjusted the designs with the client until they were happy with it. After the designs were done, I programmed the 3 components in React and added them to the existing source code. I hope to run a case study on this project to compare conversions with the new design and improved loading time.</p>
+                    </div>
+                </div>
+
                 <div className="flexRow">
                     <Project projectLink = {reloc8Link} projectImage={reloc8Image} projectName = {reloc8Name}/>
                     <div className="desc">
