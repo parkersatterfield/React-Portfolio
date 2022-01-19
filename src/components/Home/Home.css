@@ -3,9 +3,10 @@
 }
 
 .home {
-    position: relative;
-    left: 10%;
-    top: 20%;
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .myWorkButton {
@@ -35,25 +36,30 @@
 .home h4 {
     color: var(--darkGray);
     font-weight: 500;
-    padding: 10px;
+    font-size: 36pt;
 }
 
 .bg {
     height: 80vh;
-    width: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-@media screen and (max-width: 500px) {
-    .home h1{
-        font-size: 50px;
-    }
+.homeLeft {
+    transform: rotate(-90deg);
+    transform-origin: bottom;
+    width: 30%;
+    display: flex;
+}
 
-    .home {
-        width: 88vw;
-        position: relative;
-        left: 10%;
-        top: 10%;
-        margin: 0;
+.homeRight {
+    width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    .home h1{
+        font-size: 72px;
     }
 
     .bg {
@@ -62,7 +68,45 @@
     }
 
     .home h4 {
-        padding: 0;
+        font-size: 24pt;
+    }
+
+    .homeRight {
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .bg {
+        background-position: center;
+        background-size: 60vh;
+    }
+
+    .home h1{
+        font-size: 60px;
+    }
+
+    .bg {
+        background-position: center;
+        background-size: 60vh;
+    }
+
+    .home h4 {
+        font-size: 20pt;
+        margin-top: 50px;
+    }
+
+    .home {
+        align-items: flex-start;
+    }
+
+    .homeLeft {
+        transform: rotate(-90deg) translate(-190%);
+    }
+
+    .homeRight {
+        width: 80%;
     }
     
 }

@@ -22,16 +22,20 @@ function Home() {
             transition={transition}
             className = 'bg'>
             <div className="home">
-                <h1>Welcome!</h1>
-                <h4>My name is Parker. I'm an engineer, founder, and web developer based in Birmingham</h4>
-                <Link to={'/mywork'} >
-                    <motion.button
-                        className='myWorkButton'
-                        whileHover={{scale:1.06}}
-                        whileTap={{scale:0.95}}>
-                        See My Work 👉🏻
-                    </motion.button>
-                </Link>
+                <div className="homeLeft">
+                    <h1>Welcome!</h1>
+                </div>
+                <div className="homeRight">
+                    <h4>My name is Parker. I'm an engineer, founder, and web developer based in Birmingham</h4>
+                    <Link to={'/mywork'} >
+                        <motion.button
+                            className='myWorkButton'
+                            whileHover={{scale:1.06}}
+                            whileTap={{scale:0.95}}>
+                            See My Work 👉🏻
+                        </motion.button>
+                    </Link>
+                </div>
             </div>
         </motion.div>
     )
