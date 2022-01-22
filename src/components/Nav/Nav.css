@@ -73,14 +73,20 @@ h4 {
 }
 
 .navButton {
-    background-color: var(--blue);
-    color: whitesmoke;
+    color: var(--darkGray);
+    text-decoration: none;
     margin-right: 8px;
     margin-bottom: 2px;
     border-radius: 5px;
     border-style: none;
     padding:  8px 10px 8px 10px;
     font-size: 12px;
+
+    transition: ease-in-out 0.2s;
+}
+
+.navButton:hover {
+    transform: scale(1.06);
 }
 
 .mainNavContainer {

@@ -32,7 +32,7 @@ function Home() {
                             className='myWorkButton'
                             whileHover={{scale:1.06}}
                             whileTap={{scale:0.95}}>
-                            See My Work 👉🏻
+                            See My Work →
                         </motion.button>
                     </Link>
                 </div>

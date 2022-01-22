@@ -1,5 +1,6 @@
 import './Contact.css'
 import blob from './blob.svg'
+import logo from '../Nav/logo.svg'
 import axios from 'axios';
 import {useState} from 'react';
 import {motion} from 'framer-motion';
@@ -81,17 +82,32 @@ function Contact() {
             animate={{ opacity: 1 }}
             transition={transition}>
             <form className="formContainer">
-                <div>
-                    <div className = "form" onSubmit={submitForm}>
-                        <h4>Hit me up!</h4>
+                <div className = "form" onSubmit={submitForm}>
+                    <div className="formSidebar">
                         <div className="linkContainer">
                             <div className= 'links'>
                                 <div className="linksList">
-                                    <a class="fa fa-github" href="https://github.com/parkersatterfield" target="_blank" rel="noreferrer"> </a>
-                                    <a class="fa fa-linkedin"href="https://www.linkedin.com/in/parker-satterfield-22313b160/" target="_blank" rel="noreferrer"> </a>
-                                    <a class="fa fa-instagram" href="https://www.instagram.com/parker_satterfield/" target="_blank" rel="noreferrer"> </a>
+                                    <div>
+                                        <a class="fa fa-github" href="https://github.com/parkersatterfield" target="_blank" rel="noreferrer"> </a>
+                                        <p>GitHub</p>
+                                    </div>
+                                    <div>
+                                        <a class="fa fa-linkedin"href="https://www.linkedin.com/in/parker-satterfield-22313b160/" target="_blank" rel="noreferrer"> </a>
+                                        <p>LinkedIn</p>
+                                    </div>
+                                    <div>
+                                        <a class="fa fa-instagram" href="https://www.instagram.com/parker_satterfield/" target="_blank" rel="noreferrer"> </a>
+                                        <p>Instagram</p>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div className='formMain'>
+                        <div className='formHead'>
+                            <h1>Hit me up!</h1>
+                            <img src={logo} alt="" />
                         </div>
                         {message && 
                         <div className={`message ${message.color}`}>
@@ -110,11 +126,9 @@ function Contact() {
                         <div className="multi">
                             <label>Message</label>
                             <textarea id='message' type="text" value={formState.message} onChange={updateFormControl}/>
-                            <div className="buttonContainer">
-                                <button className='submitButton' disabled={submitting || formState.message==='' || formState.name === '' || formState.email ===''} onClick={submitForm}>
-                                    {submitting ? 'Submitting...' : 'Submit'}
-                                </button>
-                            </div>
+                            <button className='submitButton' disabled={submitting || formState.message==='' || formState.name === '' || formState.email ===''} onClick={submitForm}>
+                                {submitting ? 'Submitting...' : 'Submit'}
+                            </button>
                         </div>
                     </div>
                 </div>

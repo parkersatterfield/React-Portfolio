@@ -51,14 +51,23 @@ function Nav() {
                     </div>
                 </Link>
                 <div className="menu">
-                    <Link to={'/mywork'} >
-                        <motion.button
-                            className='navButton'
-                            whileHover={{scale:1.06}}
-                            whileTap={{scale:0.95}}>
-                            See My Work
-                        </motion.button>
+                    {location !== '/mywork' &&
+                    <Link 
+                        to={'/mywork'}
+                        className='navButton'
+                        >
+                        My Work  →
                     </Link>
+                    }
+
+                    {location == '/mywork' &&
+                    <Link 
+                        to={'/about'}
+                        className='navButton'
+                        >
+                        About Me  →
+                    </Link>
+                    }
                     <button className="hamburgerMenuContainer" onClick={()=> setNavVisibility(!navVisibility)}>
                         <img src={menu} alt="menu" />
                     </button>
