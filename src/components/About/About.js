@@ -26,12 +26,6 @@ function Home() {
         transition: ease-in-out 0.5s;
     `;
 
-    // const [scrollPosition, setScrollPosition] = useState((0,0));
-
-    // useEffect(() => {
-    //     window.scrollTo(0, 850)
-    // }, [scrollPosition])
-
     const scrollDown = {
         hidden: {
             y: "-100vh",
@@ -65,6 +59,7 @@ function Home() {
                     startup companies to share their experiences, network, and raise money. Working on Dibs is where I was first
                     exposed to web development, and I've been learning ever since. I am currently seeking a position as a junior engineer, so I can hone my skills and work on some cool projects. </p>  
                 </div>
+                
                 <ScrollLink to="moreAbout" spy={true} smooth={true}>
                     <div className= "seemore">
                         <p>See More!</p>

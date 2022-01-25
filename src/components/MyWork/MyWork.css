@@ -1,10 +1,5 @@
-.desc {
-    padding-left: 5px;
-}
-
-.desc p {
-    margin-top: 2px;
-    padding-left: 0;
+/.projectContainer {
+    width: 85%;
 }
 
 .switch p {
@@ -69,8 +64,7 @@ img {
         flex-direction: row-reverse;
     }
 
-    .desc {
-        padding-left: 40px;
-        padding-right: 40px;
+    .project img {
+        margin: 20px;
     }
 }

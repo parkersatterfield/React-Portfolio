@@ -84,12 +84,12 @@
 .form h1 {
     color: var(--darkGray);
     font-size: 24pt;
-    margin: 5px 0 0 10px;
+    margin: 5px 0 0 0;
 }
 
 input, textarea {
     background-color: white;
-    margin: 10px 0 5px 10px;
+    margin: 5px 0 12px 0;
     padding: 5px;
     border-radius: 3px;
     border-style: none;
@@ -110,7 +110,6 @@ input:focus, textarea:focus {
     border-radius: 3px;
     transition: 0.5s;
     padding: 12px;
-    margin-left: 10px;
     width: fill;
     box-sizing: border-box
 }
@@ -154,7 +153,6 @@ input:focus, textarea:focus {
 label {
     color: var(--darkGray);
     display: block;
-    margin-left: 10px;
 }
 
 

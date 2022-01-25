@@ -99,6 +99,10 @@ function Contact() {
                                         <a class="fa fa-instagram" href="https://www.instagram.com/parker_satterfield/" target="_blank" rel="noreferrer"> </a>
                                         <p>Instagram</p>
                                     </div>
+                                    <div>
+                                        <a class="fa fa-dribbble" href="https://dribbble.com/parksatt" target="_blank" rel="noreferrer"> </a>
+                                        <p>Dribbble</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
