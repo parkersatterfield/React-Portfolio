@@ -27,18 +27,15 @@
 }
 
 .home span {
+    font-weight: 600;
     color: var(--darkGray);
     font-size: 76pt;
     margin: 0;
     padding: 0;
 }
 
-.home span {
-    font-weight: 600;
-    color: var(--darkGray);
-    font-size: 76pt;
-    margin: 0;
-    padding: 0;
+.home {
+    overflow: hidden;
 }
 
 .home span:nth-child(1) {
