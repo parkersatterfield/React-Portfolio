@@ -26,11 +26,62 @@
     color: var(--light)
 }
 
-.home h1 {
+.home span {
     color: var(--darkGray);
     font-size: 76pt;
     margin: 0;
     padding: 0;
+}
+
+.home span {
+    font-weight: 600;
+    color: var(--darkGray);
+    font-size: 76pt;
+    margin: 0;
+    padding: 0;
+}
+
+.home span:nth-child(1) {
+    animation: animate 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.home span:nth-child(2) {
+    animation: animate 2s;
+}
+
+.home span:nth-child(3) {
+    animation: animate 2s;
+}
+
+.home span:nth-child(4) {
+    animation: animate 3s;
+}
+
+.home span:nth-child(5) {
+    animation: animate 2s;
+}
+
+.home span:nth-child(6) {
+    animation: animate 1s;
+}
+
+.home span:nth-child(7) {
+    animation: animate 1s;
+}
+
+.home span:nth-child(8) {
+    animation: animate 3s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(-1000px);
+    }
+
+    100% {
+        transform: translateY(0px)
+    }
 }
 
 .home h2 {
@@ -77,7 +128,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .home h1{
+    .home span{
         font-size: 72px;
     }
 
@@ -102,7 +153,7 @@
         background-size: 60vh;
     }
 
-    .home h1{
+    .home span{
         font-size: 60px;
     }
 
