@@ -7,6 +7,7 @@
     width: 85%;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 .myWorkButton {
@@ -32,10 +33,6 @@
     font-size: 76pt;
     margin: 0;
     padding: 0;
-}
-
-.home {
-    overflow: hidden;
 }
 
 .home span:nth-child(1) {

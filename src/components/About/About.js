@@ -12,10 +12,7 @@ import { useState, useEffect } from 'react';
 import { useAnimation, AnimatePresence } from 'framer-motion';
 import {Link as ScrollLink, AnimateScroll as scroll} from 'react-scroll';
 
-
 function Home() {
-
-
     const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
 
     document.body.style = `
@@ -28,14 +25,14 @@ function Home() {
 
     const scrollDown = {
         hidden: {
-            y: "-100vh",
+            y: "-100px",
             opacity: 0
         },
         visible: {
             y: "0"
         },
         exit: {
-            y: "-100vh",
+            y: "-100px",
             opacity: 0
         }
     }

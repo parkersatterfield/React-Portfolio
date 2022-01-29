@@ -8,6 +8,7 @@ import image5 from '../../images/image5.JPG';
 import image6 from '../../images/image6.jpg';
 import { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import Footer from '../Footer/Footer'
 
 function MoreAbout() {
     const controls = useAnimation();
@@ -57,60 +58,60 @@ function MoreAbout() {
                 <div className="galleryContainer">
 
                     <div className="gallery">
-                        <div className="galleryOverlay">
+                        {/* <div className="galleryOverlay">
                             <h1>Fam in Seaside</h1>
                             <p>2020</p>
-                        </div>
+                        </div> */}
                         <motion.img 
                             variants={item}
                             src={image2} alt="Picture of Me" />
                     </div>
 
                     <div className="gallery" >
-                        <div className="galleryOverlay">
+                        {/* <div className="galleryOverlay">
                             <h1>Braves Game</h1>
                             <p>2020</p>
-                        </div>
+                        </div> */}
                         <motion.img
                             variants={item}
                             src={image1} alt="Picture of Me" />
                     </div>
 
                     <div className="gallery">
-                        <div className="galleryOverlay">
+                        {/* <div className="galleryOverlay">
                             <h1>Graduation</h1>
                             <p>2019</p>
-                        </div>
+                        </div> */}
                         <motion.img 
                             variants={item}
                             src={image3} alt="Picture of Me" />
                     </div>
                     
                     <div className="gallery">
-                        <div className="galleryOverlay">
+                        {/* <div className="galleryOverlay">
                             <h1>Harbour Island</h1>
                             <p>2021</p>
-                        </div>
+                        </div> */}
                         <motion.img 
                             variants={item}
                             src={image4} alt="Picture of Me" />
                     </div>
 
                     <div className="gallery">
-                        <div className="galleryOverlay">
+                        {/* <div className="galleryOverlay">
                             <h1>Napa Wedding</h1>
                             <p>2021</p>
-                        </div>
+                        </div> */}
                         <motion.img 
                             variants={item}
                             src={image5} alt="Picture of Me" />
                     </div>
 
                     <div className="gallery">
-                        <div className="galleryOverlay">
+                        {/* <div className="galleryOverlay">
                             <h1>War Eagle</h1>
                             <p>2021</p>
-                        </div>
+                        </div> */}
                         <motion.img 
                             variants={item}
                             src={image6} alt="Picture of Me" />
@@ -118,7 +119,7 @@ function MoreAbout() {
 
                 </div>
             </div>
-          
+            <Footer />
         </motion.div>
     )
 }

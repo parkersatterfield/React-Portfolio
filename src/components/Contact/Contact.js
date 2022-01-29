@@ -4,6 +4,7 @@ import logo from '../Nav/logo.svg'
 import axios from 'axios';
 import {useState} from 'react';
 import {motion} from 'framer-motion';
+import Footer from '../Footer/Footer'
 
 function Contact() {
     const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
@@ -11,7 +12,7 @@ function Contact() {
     document.body.style = `
         background-image: url(${blob}); 
         background-repeat: no-repeat;
-        background-position: top 120% left -250px;
+        background-position: top 150% left -400px;
         background-size: 160vh;
         transition: ease-in-out 0.5s;
     `;
@@ -137,6 +138,7 @@ function Contact() {
                     </div>
                 </div>
             </form>
+            <Footer />
         </motion.div>
     )
 }

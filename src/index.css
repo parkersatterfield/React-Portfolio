@@ -17,3 +17,31 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* custom scrollbar  */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  color: var(--blue);
+  transition: ease-in-out 0.2s;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  transition: ease-in-out 0.2s;
+  background: #e6e6e6;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  transition: ease-in-out 0.2s;
+  background: var(--blue);
+}
+
+::-webkit-scrollbar-button:start{
+  display: block;
+}
+
+::-webkit-scrollbar-button:end{
+  display: block;
+}

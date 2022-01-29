@@ -23,7 +23,6 @@ function Home() {
             className = 'bg'>
             <div className="home">
                 <div className="homeLeft">
-                    {/* <h1>Welcome!</h1> */}
                     <span>W</span>
                     <span>e</span>
                     <span>l</span>
