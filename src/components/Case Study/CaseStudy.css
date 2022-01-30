@@ -11,17 +11,6 @@
     flex-direction: column;
 }
 
-.imageGallery img {
-    margin: 25px 0 15px 0;
-    object-fit: contain;
-    height: 250px;
-    width: fit-content;
-}
-
-.imageGallery img:hover, .imageGallery img:active {
-    pointer-events: none;
-}
-
 .imageGallery {
     display: flex;
     align-items: center;
@@ -43,25 +32,25 @@
     transition: ease-in-out 0.2s;
 }
 
-.mainLink:hover, .secondLink:hover {
+.mainLink:hover, .secondLink:hover, .prototypeLink:hover {
     color: var(--blue);
 }
 
-.mainLink:hover > span {
+.mainLink:hover > span, .prototypeLink:hover > span {
     letter-spacing: 2px;
     margin-left: 8px;
 }
 
 .projectDetail h2 {
-    text-align: center;
-    font-size: 12pt;
+    text-align: left;
+    font-size: 18pt;
     color: var(--blueHover);
     margin: 25px 0 0 0;
     width: 85%;
 }
 
 .projectDetail p {
-    margin-bottom: 75px;
+    margin-bottom: 15px;
     width: 85%;
 }
 
@@ -72,6 +61,19 @@
     font-weight: 600;
     transition: ease-in-out 0.18s;
     width: 85%;
+}
+
+#storyboardImage {
+    width: 100%;
+}
+
+#personasImage {
+    width: 75%;
+}
+
+#prototypeImage {
+    height: 75vh;
+    object-fit: contain;
 }
 
 .notFound {

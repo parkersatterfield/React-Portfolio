@@ -1,6 +1,5 @@
 import './WorkDetail.css'
 import '../Project/Project'
-import Project from '../Project/Project';
 import { useLocation } from 'react-router';
 import Footer from '../Footer/Footer';
 import {motion} from 'framer-motion';
@@ -39,12 +38,16 @@ import strikeImage2 from "../../images/Strike2.png"
 // Reloc8 Project Info
 const reloc8Name = "Reloc8"
 const reloc8Link = "https://parkersatterfield.github.io/Reloc8/"
+const reloc8Link2 = "https://github.com/parkersatterfield/Reloc8"
+const reloc8Link2Desc = "<See the Code />"
 const reloc8Desc = 'Reloc8 was the first project that we did for bootcamp. As a team, we wanted to put together 2 APIs and throw them together in an app. Originally, we wanted to use the Zillow API and the Monster API to allow for users to search a job and then receive housing results based on the job location, but we were having some issued with both the Monster and Zillow public API keys. We ended up going with the Yelp API and hard coding a list of jobs.'
 const reloc8Tags = 'HTML, CSS, JQuery, Yelp API'
 
 // Weather App Project Info
 const weatherAppName = "Weather App"
 const weatherAppLink = "https://parkersatterfield.github.io/Weather-Dashboard/"
+const weatherAppLink2 = "https://github.com/parkersatterfield/Weather-Dashboard"
+const weatherAppLink2Desc = "<See the Code />"
 const weatherAppDesc = 'Building a weather app is a right of passage for front end developers. This was one of the first bootcamp assignments. We were given an image of what it was supposed to look like and the API it was supposed to use and told to build it.'
 const weatherAppTags = 'OpenWeather API, HTML, CSS, Vanilla JS'
 
@@ -63,6 +66,8 @@ const dibsTags = 'Bubble.io, UI/UX, iFrame, payment integration'
 // SibsForever Project Info
 const sibsName = "Sibs Forever"
 const sibsLink = "https://sibsforever.org"
+const sibsLink2 = "https://www.figma.com/file/gsBMRuJMJHqYCs9BKD3Bv1/SibsForever?node-id=142%3A407"
+const sibsLink2Desc = "See the Designs"
 const sibsDesc = 'Sibs was the only project that I landed during my time freelancing on UpWork. I found the UpWork market extremely competitive and filled with wordpress developers that were too hard to compete with for basic web development projects. This led me to start learning more in depth concepts of UX and design to try and offer services in these areas. Working on Sibs was a great experience. My client was an extremely knowledgeable backend engineer and had developed a great platform for those who had lost a loved one. I offered my design and frontend development services to give the Sibs Team a high fidelity prototype in Figma and then some stylized React components for the navbar, landing page, and footer.'
 const sibsTags = 'UpWork, Figma, UI Design, Landing Page Design, Branding'
 
@@ -75,6 +80,8 @@ const strikeTags = 'Figma, User Personas, Storyboard, Hi-Fi Prototyping, Mockups
 function MyWork() {  
     let projectName = '';
     let projectLink = '';
+    let projectLink2 = '';
+    let projectLink2Desc = '';
     let projectImage = '';
     let projectImage2 = '';
     let projectDesc = '';
@@ -89,7 +96,9 @@ function MyWork() {
 
     if (location === '/project/sibsforever') {
         projectName = sibsName;
-        projectLink = sibsLink;
+        projectLink = sibsLink;    
+        projectLink2 = sibsLink2;
+        projectLink2Desc = sibsLink2Desc;
         projectDesc = sibsDesc;
         projectTags = sibsTags;
         projectImage = sibsImage;
@@ -97,20 +106,14 @@ function MyWork() {
         // projectImage3 = sibsImage3;
     } else if (location === '/project/reloc8') {
         projectName = reloc8Name;
-        projectLink = reloc8Link;
+        projectLink = reloc8Link;        
+        projectLink2 = reloc8Link2;
+        projectLink2Desc = reloc8Link2Desc;
         projectDesc = reloc8Desc;
         projectTags = reloc8Tags;
         projectImage = reloc8Image;
         projectImage2 = reloc8Image2;
         // projectImage3 = reloc8Image3;
-    } else if (location === '/project/strike') {
-        projectName = strikeName;
-        projectLink = strikeLink;
-        projectDesc = strikeDesc;
-        projectTags = strikeTags;
-        projectImage = strikeImage;
-        projectImage2 = strikeImage2;
-        // projectImage3 = strikeImage3;
     } else if (location === '/project/dibs') {
         projectName = dibsName;
         projectLink = dibsLink;
@@ -122,6 +125,8 @@ function MyWork() {
     } else if (location === '/project/weatherapp') {
         projectName = weatherAppName;
         projectLink = weatherAppLink;
+        projectLink2 = weatherAppLink2;
+        projectLink2Desc = weatherAppLink2Desc;
         projectDesc = weatherAppDesc;
         projectTags = weatherAppTags;
         projectImage = weatherAppImage;
@@ -154,7 +159,8 @@ function MyWork() {
             transition={transition}
             className="workDetailContainer">
             <div className="project projectDetail">
-                <a href={projectLink} target="_blank" rel="noreferrer"> {projectName} <span>→</span></a>
+                <a href={projectLink} target="_blank" rel="noreferrer" className='mainLink'> {projectName} <span>→</span></a>
+                {projectLink2 !== "" && <a target="_blank" rel="noreferrer" className="secondLink" href={projectLink2}>{projectLink2Desc}</a>}
                 <div className="imageGallery">
                     <img src={projectImage} alt={projectName} />
                     <img src={projectImage2} alt={projectName} />

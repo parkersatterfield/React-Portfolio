@@ -12,6 +12,7 @@ import Contact from './components/Contact/Contact'
 import MyWork from './components/MyWork/MyWork'
 import About from './components/About/About'
 import WorkDetail from './components/Work Detail/WorkDetail'
+import CaseStudy from './components/Case Study/CaseStudy'
 import {motion} from 'framer-motion'
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
               <Route exact path="/mywork" element={<MyWork />} />
               <Route exact path="/contact" element={<Contact />} />
               <Route exact path="/project/*" element={<WorkDetail />} />
+              <Route exact path="/casestudy/*" element={<CaseStudy />} />
             </Routes>
           </AnimatePresence>
         </div>

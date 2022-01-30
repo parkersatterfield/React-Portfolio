@@ -35,7 +35,7 @@ const sibsLink = "/project/sibsforever"
 
 // Strike Project Info
 const strikeName = "Strike"
-const strikeLink = "/project/strike"
+const strikeLink = "/casestudy/strike"
 
 function MyWork() {   
     const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
