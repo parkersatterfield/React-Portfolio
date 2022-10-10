@@ -12,6 +12,7 @@ import weatherImage from "../../images/Weather.png"
 import dibsImage from "../../images/Dibs.png"
 import sibsImage from "../../images/Sibs.png"
 import strikeImage from "../../images/Strike.png"
+import xmltosqlImage from "../../images/XMLtoSQL.png"
 
 // Reloc8 Project Info
 const reloc8Name = "Reloc8"
@@ -37,6 +38,10 @@ const sibsLink = "/project/sibsforever"
 const strikeName = "Strike"
 const strikeLink = "/casestudy/strike"
 
+// XML to SQL Info
+const xmltosqlName = "XML to SQL"
+const xmltosqlLink = "/project/xmltosql"
+
 function MyWork() {   
     const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
 
@@ -53,6 +58,9 @@ function MyWork() {
             <h1>Some of My Work</h1>
             <div className="mainContainer">
                 <div className = 'projectContainer'>
+                    <div className="flexRow">
+                        <Project projectImage={xmltosqlImage} projectName = {xmltosqlName} projectLink={xmltosqlLink}/>
+                    </div>
                     <div className="flexRow">
                         <Project projectImage={sibsImage} projectName = {sibsName} projectLink={sibsLink}/>
                     </div>

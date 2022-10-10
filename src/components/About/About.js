@@ -50,11 +50,17 @@ function Home() {
                 <h5>Founder, Dibs</h5>
                 <div className="bioContainer">
                     <img src={selfPortrait} alt="Headshot" />
-                    <p>I graduated from Auburn University in 2019 with a degree in biological systems engineering
-                    and a minor in business. After a short stent as an engineering consultant at a firm in Atlanta, I left
-                    to start my own company, Dibs. Dibs is a social media and seed funding platform for early stage
-                    startup companies to share their experiences, network, and raise money. Working on Dibs is where I was first
-                    exposed to web development, and I've been learning ever since. I am currently seeking a position as a junior engineer, so I can hone my skills and work on some cool projects. </p>  
+                    <p>
+                        I graduated from Auburn University in 2019 with a degree in biological systems engineering
+                        and a minor in business. After a short stent as an engineering consultant at a firm in Atlanta, I left
+                        to start my own company, Dibs. Dibs is a social media and seed funding platform for early stage
+                        startup companies to share their experiences, network, and raise money. Working on Dibs is where I was first
+                        exposed to web development, and I've been learning ever since. Now, I consider myself an engineer, startup founder, and software developer. I have experience working on full stack applications and SaaS products, and I am passionate about designing and building 
+                        performant and attractive software products that improve the lives of its users. I have a Bachelors of 
+                        Engineering from Auburn University, and worked on software through my undergraduate research. Though I 
+                        didn’t find my passion for building web applications until after I graduated, I completed a full stack web 
+                        development bootcamp where I learned to apply my prior coding skills to web and mobile development.  
+                    </p>  
                 </div>
                 
                 <ScrollLink to="moreAbout" spy={true} smooth={true}>

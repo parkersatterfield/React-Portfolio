@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.3066b8a0.chunk.css",
-    "main.js": "/static/js/main.9f45f54a.chunk.js",
-    "main.js.map": "/static/js/main.9f45f54a.chunk.js.map",
+    "main.css": "/static/css/main.cae77c53.chunk.css",
+    "main.js": "/static/js/main.8c8a6716.chunk.js",
+    "main.js.map": "/static/js/main.8c8a6716.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.7f005dbd.js",
     "runtime-main.js.map": "/static/js/runtime-main.7f005dbd.js.map",
     "static/js/2.218387b2.chunk.js": "/static/js/2.218387b2.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.8f6d9c33.chunk.js": "/static/js/3.8f6d9c33.chunk.js",
     "static/js/3.8f6d9c33.chunk.js.map": "/static/js/3.8f6d9c33.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.3066b8a0.chunk.css.map": "/static/css/main.3066b8a0.chunk.css.map",
+    "static/css/main.cae77c53.chunk.css.map": "/static/css/main.cae77c53.chunk.css.map",
     "static/js/2.218387b2.chunk.js.LICENSE.txt": "/static/js/2.218387b2.chunk.js.LICENSE.txt",
     "static/media/CMS.f1544e06.png": "/static/media/CMS.f1544e06.png",
     "static/media/CMS2.4cc5ff73.png": "/static/media/CMS2.4cc5ff73.png",
@@ -18,7 +18,7 @@
     "static/media/Dibs2.47314f74.png": "/static/media/Dibs2.47314f74.png",
     "static/media/Reloc8.5a793549.png": "/static/media/Reloc8.5a793549.png",
     "static/media/Reloc82.a5146f3c.jpg": "/static/media/Reloc82.a5146f3c.jpg",
-    "static/media/Resume.0cf7dd2c.pdf": "/static/media/Resume.0cf7dd2c.pdf",
+    "static/media/Resume.a1a305c0.pdf": "/static/media/Resume.a1a305c0.pdf",
     "static/media/Sibs.f5d54de4.png": "/static/media/Sibs.f5d54de4.png",
     "static/media/Sibs2.072c089a.jpg": "/static/media/Sibs2.072c089a.jpg",
     "static/media/Strike.65c75067.png": "/static/media/Strike.65c75067.png",
@@ -27,6 +27,8 @@
     "static/media/StrikeStoryboard.5c8d685c.png": "/static/media/StrikeStoryboard.5c8d685c.png",
     "static/media/Weather.776aa1b0.png": "/static/media/Weather.776aa1b0.png",
     "static/media/Weather2.8954a6bd.jpg": "/static/media/Weather2.8954a6bd.jpg",
+    "static/media/XMLtoSQL.75f2d639.png": "/static/media/XMLtoSQL.75f2d639.png",
+    "static/media/XMLtoSQL2.1b1dab4a.png": "/static/media/XMLtoSQL2.1b1dab4a.png",
     "static/media/blob.6a63517d.svg": "/static/media/blob.6a63517d.svg",
     "static/media/blob.a20d0ca2.svg": "/static/media/blob.a20d0ca2.svg",
     "static/media/headshot.3138cb27.jpg": "/static/media/headshot.3138cb27.jpg",
@@ -44,7 +46,7 @@
   "entrypoints": [
     "static/js/runtime-main.7f005dbd.js",
     "static/js/2.218387b2.chunk.js",
-    "static/css/main.3066b8a0.chunk.css",
-    "static/js/main.9f45f54a.chunk.js"
+    "static/css/main.cae77c53.chunk.css",
+    "static/js/main.8c8a6716.chunk.js"
   ]
 }

@@ -34,6 +34,10 @@ import strikeImage from "../../images/Strike.png"
 import strikeImage2 from "../../images/Strike2.png"
 // import strikeImage3 from "../../images/Strike3.png"
 
+// XML to SQL Images
+import xmltosqlImage from "../../images/XMLtoSQL.png"
+import xmltosqlImage2 from "../../images/XMLtoSQL2.png"
+
 
 // Reloc8 Project Info
 const reloc8Name = "Reloc8"
@@ -76,6 +80,14 @@ const strikeName = "Strike"
 const strikeLink = "https://www.figma.com/file/AYaEgLvShqEfcRqJbeF217/STRIKE?node-id=6%3A538"
 const strikeDesc = 'I have been a mediocre golf player since I was about 8 years old. I play pretty often, but I would love to play more. I recently learned about a few golfing apps such as The Grint and 18 Birdies that act as a social networking and golf tools app. I was excited to try them, but disappointed when I actually tried to use them. For me, the social aspect was lacking, the features were complicated, and the UI was pretty bad. This led me to try my hand at prototyping some UX for a similar app that I called Strike.'
 const strikeTags = 'Figma, User Personas, Storyboard, Hi-Fi Prototyping, Mockups'
+
+// XML to SQL Info
+const xmltosqlName = "XML to SQL"
+const xmltosqlLink = "https://www.xmltosql.com" 
+const xmltosqlLink2 = "https://github.com/parkersatterfield/xmlbatch" 
+const xmltosqlDesc = 'While working at Fieldster, I build an internal tool to help the data team convert new clients from their old CRM to Fieldster\'s. To do this, we needed to get their old data, convert it into SQL data, and spin them up a client database. At the time, it seemed like there was no way to easily (or freely) do this - so I offered to build something. By looking at the XML nodes, you can determine what the table names, column names, and data types should be. I built this with C# and hooked it up to the local environment and manually sent the .bat file. After building that, I wanted to build an interface for it and publish it for others to use. I used React for the interface, and after deciding that giving users create database access to my server was a horrible idea without at least building a login, I decided to take a different approach and just output a sql file with the commands that I was going to run on the server. This simplified the project quite a bit, but I am happy with how it turned out.'
+const xmltosqlLink2Desc = "<See the Code />"
+const xmltosqlTags = 'React, SQL, Node'
 
 function MyWork() {  
     let projectName = '';
@@ -140,6 +152,15 @@ function MyWork() {
         projectImage = employeeTrackerImage;
         projectImage2 = employeeTrackerImage2;
         // projectImage3 = employeeTrackerImage3;
+    }  else if (location === '/project/xmltosql') {
+        projectName = xmltosqlName;
+        projectLink = xmltosqlLink;
+        projectLink2 = xmltosqlLink2;
+        projectLink2Desc = xmltosqlLink2Desc;
+        projectDesc = xmltosqlDesc;
+        projectTags = xmltosqlTags;
+        projectImage = xmltosqlImage;
+        projectImage2 = xmltosqlImage2;
     } else {
         return (
             <div className="notFound">
