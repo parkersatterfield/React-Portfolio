@@ -1,5 +1,5 @@
 .formContainer {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px;
@@ -43,7 +43,8 @@
     display: flex;
 }
 
-.links a, .links a:visited {
+.links a,
+.links a:visited {
     padding: 8px;
     margin: 12px;
     justify-content: space-between;
@@ -62,7 +63,8 @@
     font-size: 12pt;
 }
 
-.links a:hover, .links p:hover {
+.links a:hover,
+.links p:hover {
     background-color: var(--blueHover);
 }
 
@@ -87,30 +89,27 @@
     margin: 5px 0 0 0;
 }
 
-input, textarea {
+input,
+textarea {
     background-color: white;
     margin: 5px 0 12px 0;
     padding: 5px;
     border-radius: 3px;
     border-style: none;
     color: var(--darkGray);
-    width: fill;
+    width: 100%;
     box-sizing: border-box
 }
 
-input:focus, textarea:focus {
-    border-style: solid;
-    border-color: var(--blueHover);
-}
-
-.submitButton, .submitButton:disabled:hover{
+.submitButton,
+.submitButton:disabled:hover {
     background-color: var(--blue);
     color: white;
     border-style: none;
     border-radius: 3px;
     transition: 0.5s;
     padding: 12px;
-    width: fill;
+    width: 100%;
     box-sizing: border-box
 }
 
@@ -121,31 +120,32 @@ input:focus, textarea:focus {
 .multi textarea {
     height: 150px;
     resize: none;
+    width: 100%;
 }
 
 .message {
     visibility: collapse;
-    display:flex;
+    display: flex;
     justify-content: center;
     color: white;
     text-align: center;
     border-radius: 3px;
     padding: 8px;
-    margin:8px;
+    margin: 8px;
     width: stretch;
     justify-self: center;
 }
 
 .red {
     visibility: visible;
-    display:flex;
+    display: flex;
     justify-self: center;
     background-color: var(--blue);
 }
 
 .green {
     visibility: visibility;
-    display:flex;
+    display: flex;
     justify-self: center;
     background-color: var(--red);
 }
@@ -190,5 +190,5 @@ label {
     .formHead img {
         display: none;
     }
-    
+
 }

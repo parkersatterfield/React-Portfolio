@@ -1,15 +1,12 @@
 import './Nav.css';
 import resume from './Resume.pdf';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router';
 import {motion} from 'framer-motion';
 import logo from './logo.svg';
 import menu from './menu.svg';
 import MiniNav from '../MiniNav/MiniNav';
-import { useAnimation } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { AnimatePresence } from 'framer-motion';
 
 function Nav() {
     const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
@@ -59,15 +56,6 @@ function Nav() {
                         My Work  →
                     </Link>
                     }
-
-                    {location == '/mywork' &&
-                    <Link 
-                        to={'/about'}
-                        className='navButton'
-                        >
-                        About Me  →
-                    </Link>
-                    }
                     <button className="hamburgerMenuContainer" onClick={()=> setNavVisibility(!navVisibility)}>
                         <img src={menu} alt="menu" />
                     </button>
@@ -78,13 +66,6 @@ function Nav() {
                         to={"/"}
                         >
                         Home
-                    </Link>
-
-                    <Link
-                        className={(location === '/about') ? 'active' : 'navLink'}
-                        to={"/about"}
-                        >
-                        About
                     </Link>
 
                     <Link

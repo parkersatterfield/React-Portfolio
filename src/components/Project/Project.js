@@ -7,7 +7,6 @@ function Project(props) {
         <div className="project">
             <Link to={props.projectLink}>
                 <img id="example" src={props.projectImage} alt={props.projectName} />
-                <figcaption>{props.projectName}</figcaption>
             </Link>
         </div>
     )

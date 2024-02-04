@@ -61,13 +61,6 @@ function MiniNav () {
                     </Link>
 
                     <Link
-                        className={(location === '/about') ? 'miniNavActive' : 'miniNavLink'}
-                        to={"/about"}
-                        >
-                        About
-                    </Link>
-
-                    <Link
                         className={(location === '/mywork') ? 'miniNavActive' : 'miniNavLink'}
                         to={"/mywork"}
                         >

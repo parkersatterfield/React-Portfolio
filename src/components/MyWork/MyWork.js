@@ -1,86 +1,64 @@
 import './MyWork.css'
 import '../Project/Project'
 import Project from '../Project/Project';
-import { Link } from 'react-router-dom';
-import Footer from '../Footer/Footer';
-import {motion} from 'framer-motion';
+import Footer from '../../components/Footer/Footer'
+import { motion } from 'framer-motion';
 
 // Project Images
-import cmsImage from "../../images/CMS.png"
-import reloc8Image from "../../images/Reloc8.png"
-import weatherImage from "../../images/Weather.png"
+import navCliImage from "../../images/NavCLI.png"
 import dibsImage from "../../images/Dibs.png"
-import sibsImage from "../../images/Sibs.png"
 import strikeImage from "../../images/Strike.png"
 import xmltosqlImage from "../../images/XMLtoSQL.png"
 
-// Reloc8 Project Info
-const reloc8Name = "Reloc8"
-const reloc8Link = "/project/reloc8"
-
-// Weather App Project Info
-const weatherName = "Weather App"
-const weatherLink = "/project/weatherapp"
-
-// CMS Project Info
-const cmsName = "Employee Tracker CMS"
-const cmsLink = "/project/employeetracker"
+// Nav CLI Project Info
+const navCliLink = "/project/navCli"
 
 // Dibs Project Info
-const dibsName = "Dibs"
 const dibsLink = "/project/dibs"
 
-// SibsForever Project Info
-const sibsName = "SibsForever"
-const sibsLink = "/project/sibsforever"
-
 // Strike Project Info
-const strikeName = "Strike"
 const strikeLink = "/casestudy/strike"
 
 // XML to SQL Info
-const xmltosqlName = "XML to SQL"
 const xmltosqlLink = "/project/xmltosql"
 
-function MyWork() {   
-    const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
+function MyWork() {
+    const transition = { duration: 1, ease: [0.43, 0.13, 0.23, 0.96] }
 
     document.body.style = `
     background-image: ""; background-color:#FAFAFA`;
-    
+
     return (
         <motion.div
-            exit={{opacity: 0}}
-            initial={{opacity: 0}}
+            exit={{ opacity: 0 }}
+            initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={transition}
             className="myWorkContainer">
-            <h1>Some of My Work</h1>
             <div className="mainContainer">
-                <div className = 'projectContainer'>
-                    <div className="flexRow">
-                        <Project projectImage={xmltosqlImage} projectName = {xmltosqlName} projectLink={xmltosqlLink}/>
+                <div className='projectContainer'>
+                    <div className="horizontalScroller">
+                        <div className="projectThumbnail">
+                            <Project projectLink={navCliLink} projectImage={navCliImage} />
+                        </div>
+                        <div className="projectThumbnail">
+                            <Project projectLink={xmltosqlLink} projectImage={xmltosqlImage} />
+                        </div>
+                        <div className="projectThumbnail">
+                            <Project projectLink={dibsLink} projectImage={dibsImage} />
+                        </div>
+                        <div className="projectThumbnail">
+                            <Project projectLink={strikeLink} projectImage={strikeImage} />
+                        </div>
                     </div>
-                    <div className="flexRow">
-                        <Project projectImage={sibsImage} projectName = {sibsName} projectLink={sibsLink}/>
-                    </div>
-                    <div className="flexRow">
-                        <Project projectLink = {reloc8Link} projectImage={reloc8Image} projectName = {reloc8Name}/>
-                    </div>
-                    <div className="flexRow switch">
-                        <Project projectLink = {dibsLink} projectImage={dibsImage} projectName = {dibsName}/>
-                    </div>
-                    <div className="flexRow">
-                        <Project projectLink = {weatherLink} projectImage={weatherImage} projectName = {weatherName}/>
-                    </div>
-                    <div className="flexRow switch">
-                        <Project projectLink = {cmsLink} projectImage={cmsImage} projectName = {cmsName}/>
-                    </div>
-                    <div className="flexRow switch">
-                        <Project projectLink = {strikeLink} projectImage={strikeImage} projectName = {strikeName}/>
-                    </div>
+                    <h3>Some of My Projects</h3>
+                    <p>
+                        I am passionate about designing and building <b>performant and attractive software products</b> that improve the lives of its users. I have multiple years of software development experience and have worked on a variety of projects ranging from <b>image processing</b> using <b>machine learning</b> to determine the mineral makeup of a rock sample, to automating free trial onboarding for a <b>SaaS</b> company by spinning up a new environment, to adding <b>semantic search</b> capabilities to a search engine.
+                        <br></br>
+                        <br></br>
+                        But that was for work. Here are some personal projects I have worked on in my free time.
+                    </p>
                 </div>
-
             </div>
             <Footer />
         </motion.div>
