@@ -6,7 +6,7 @@
 
 ## Links
 Github: https://github.com/parkersatterfield/react-portfolio
-Live: https://parkersatterfield.github.io/react-portfolio/
+Live: https://parkersatterfield.com/
 
 
             
