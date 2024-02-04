@@ -1,28 +1,24 @@
-.myWorkContainer h1{
-    text-align: center;
-    color: var(--blueHover)
-}
-
-.projectContainer {
-    width: 85%;
-}
-
-.mainContainer{
+.mainContainer {
     display: flex;
     justify-content: center;
 }
 
 .projectContainer {
-    display: flex;
     flex-wrap: wrap;
-    padding: 10px;
     justify-content: space-evenly;
-    width: 90%;
+    width: 85%;
+    margin-bottom: 30px;
 }
 
-.flexRow {
+.horizontalScroller {
+    margin-left: -10%;
+    padding-left: 10%;
+    margin-right: -10%;
+    padding-right: 10%;
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow-x: auto;
 }
 
 @media screen and (min-width: 850px) {
