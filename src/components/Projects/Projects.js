@@ -34,9 +34,9 @@ function Projects() {
             className="myWorkContainer">
             <div className="mainContainer">
                 <div className='projectContainer'>
-                    <h1>For Work.</h1>
+                    <h1>For Work 💼</h1>
                     <p>
-                        I am passionate about designing and building <b>performant and attractive software products</b> that improve the lives of their users. Through my years of software development, I have been fortunate to work on a lot of cool projects ranging from simple <b>APIs</b> to <b>search engines</b> to <b>machine learning</b>.
+                        I am passionate about designing and building performant and attractive <b>software products</b> that improve the lives of their users. Through my years of software development, I have been fortunate to work on a lot of cool projects ranging from simple <b>APIs</b> to <b>search engines</b> to <b>machine learning</b> to <b>cloud infrastructure</b>.
                     </p>
                     <div className='workProjects'>
                         <Project
@@ -56,7 +56,7 @@ function Projects() {
                             projectDescription={holdingsIqProjectDescription}
                         />
                     </div>
-                    <h1>Just Because.</h1>
+                    <h1>For Fun 🦩</h1>
                     <p>Here are some projects I did in my free time. For a full list, check out my <a href="https://github.com/parkersatterfield" target='_blank' rel='noreferrer'>GitHub</a>.</p>
                     <div className='personalProjects'>
                         <Project

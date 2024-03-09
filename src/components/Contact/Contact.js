@@ -9,13 +9,7 @@ import Footer from '../Footer/Footer'
 function Contact() {
     const transition = { duration: 1, ease: [0.43, 0.13, 0.23, 0.96] }
 
-    document.body.style = `
-        background-image: url(${blob}); 
-        background-repeat: no-repeat;
-        background-position: top 150% left -400px;
-        background-size: 160vh;
-        transition: ease-in-out 0.5s;
-    `;
+    document.body.style = `background-image: ""; background-color:#FAFAFA`;
 
     const formId = '9oEYMWJB';
     const formSparkUrl = `https://submit-form.com/${formId}`;
@@ -107,7 +101,7 @@ function Contact() {
 
                     <div className='formMain'>
                         <div className='formHead'>
-                            <h1>Hit me up!</h1>
+                            <h1>Hit me up 📨</h1>
                             <img src={logo} alt="" />
                         </div>
                         {message &&
