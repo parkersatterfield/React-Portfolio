@@ -3,8 +3,8 @@
 }
 
 .home {
-    display: flex;
-    width: 65%;
+    width: 60%;
+    height: 100vh;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
@@ -111,20 +111,13 @@
     justify-content: center;
 }
 
-.homeLeft {
-    transform: rotate(-90deg);
-    transform-origin: bottom;
-    width: 40%;
-    display: flex;
-}
-
-.homeRight {
-    width: 50%;
-}
-
 @media screen and (max-width: 1000px) {
+    .homeTop {
+        margin-top: 15px;
+    }
+
     .home span {
-        font-size: 72px;
+        font-size: 62px;
     }
 
     .bg {
@@ -136,10 +129,9 @@
         font-size: 24pt;
     }
 
-    .homeRight {
-        width: 65%;
+    .homeBottom {
+        display: block;
     }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -149,7 +141,7 @@
     }
 
     .home span {
-        font-size: 60px;
+        font-size: 36px;
     }
 
     .bg {
@@ -158,20 +150,11 @@
     }
 
     .home h2 {
-        font-size: 20pt;
-        margin-top: 50px;
+        font-size: 16pt;
     }
 
     .home {
         align-items: flex-start;
         width: 85%;
-    }
-
-    .homeLeft {
-        transform: rotate(-90deg) translate(-190%);
-    }
-
-    .homeRight {
-        width: 80%;
     }
 }

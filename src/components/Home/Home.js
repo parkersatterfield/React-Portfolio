@@ -22,7 +22,7 @@ function Home() {
             transition={transition}
             className='bg'>
             <div className="home">
-                <div className="homeLeft">
+                <div className="homeTop">
                     <span>W</span>
                     <span>e</span>
                     <span>l</span>
@@ -30,29 +30,31 @@ function Home() {
                     <span>o</span>
                     <span>m</span>
                     <span>e</span>
-                    <span>!</span>
+                    <span>👋</span>
                 </div>
-                <div className="homeRight">
+                <div className='homeBottom'>
                     <h2>My name is Parker. I'm an engineer, founder, & software developer based in Birmingham.</h2>
-                    <div className="socials">
-                        <div>
-                            <a class="fa fa-github" href="https://github.com/parkersatterfield" target="_blank" rel="noreferrer"> </a>
+                    <div className='homeActions'>
+                        <div className="socials">
+                            <div>
+                                <a class="fa fa-github" href="https://github.com/parkersatterfield" target="_blank" rel="noreferrer"> </a>
+                            </div>
+                            <div>
+                                <a class="fa fa-linkedin" href="https://www.linkedin.com/in/parker-satterfield-22313b160/" target="_blank" rel="noreferrer"> </a>
+                            </div>
+                            <div>
+                                <a class="fa fa-instagram" href="https://www.instagram.com/parker_satterfield/" target="_blank" rel="noreferrer"> </a>
+                            </div>
                         </div>
-                        <div>
-                            <a class="fa fa-linkedin" href="https://www.linkedin.com/in/parker-satterfield-22313b160/" target="_blank" rel="noreferrer"> </a>
-                        </div>
-                        <div>
-                            <a class="fa fa-instagram" href="https://www.instagram.com/parker_satterfield/" target="_blank" rel="noreferrer"> </a>
-                        </div>
+                        <Link to={'/projects'} >
+                            <motion.button
+                                className='myWorkButton'
+                                whileHover={{ scale: 1.06 }}
+                                whileTap={{ scale: 0.95 }}>
+                                Projects →
+                            </motion.button>
+                        </Link>
                     </div>
-                    <Link to={'/projects'} >
-                        <motion.button
-                            className='myWorkButton'
-                            whileHover={{ scale: 1.06 }}
-                            whileTap={{ scale: 0.95 }}>
-                            Projects →
-                        </motion.button>
-                    </Link>
                 </div>
             </div>
         </motion.div>
