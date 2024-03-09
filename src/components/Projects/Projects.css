@@ -19,7 +19,7 @@
 }
 
 @media screen and (min-width: 850px) {
-    .projectContainer {
+    <<<<<<< HEAD .projectContainer {
         width: 60%
     }
 
@@ -32,5 +32,11 @@
     .workProjects .workProjectCard,
     .personalProjects .workProjectCard {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .projectContainer {
+        width: 85%;
     }
 }
