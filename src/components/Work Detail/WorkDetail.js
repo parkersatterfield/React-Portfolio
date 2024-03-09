@@ -5,12 +5,10 @@ import Footer from '../Footer/Footer';
 import { motion } from 'framer-motion';
 
 // Nav Cli Images
-import navCliImage from "../../images/NavCLI.png"
 import navCliGif from "../../images/NavCLI.gif"
 
 // XML to SQL Images
 import xmltosqlImage from "../../images/XMLtoSQL.png"
-import xmltosqlImage2 from "../../images/XMLtoSQL2.png"
 
 // Nav CLI Project Info
 const navCliName = "Nav CLI"
@@ -34,7 +32,6 @@ function Projects() {
     let projectLink2 = '';
     let projectLink2Desc = '';
     let projectImage = '';
-    let projectImage2 = '';
     let projectDesc = '';
     let projectTags = '';
 
@@ -52,8 +49,7 @@ function Projects() {
         projectLink2Desc = navCliLink2Desc;
         projectDesc = navCliDesc;
         projectTags = navCliTags;
-        projectImage = navCliImage;
-        projectImage2 = navCliGif;
+        projectImage = navCliGif;
     } else if (location === '/project/xmltosql') {
         projectName = xmltosqlName;
         projectLink = xmltosqlLink;
@@ -62,7 +58,6 @@ function Projects() {
         projectDesc = xmltosqlDesc;
         projectTags = xmltosqlTags;
         projectImage = xmltosqlImage;
-        projectImage2 = xmltosqlImage2;
     } else {
         return (
             <div className="notFound">
@@ -86,7 +81,6 @@ function Projects() {
                 {projectLink2 !== "" && <a target="_blank" rel="noreferrer" className="secondLink" href={projectLink2}>{projectLink2Desc}</a>}
                 <div className="imageGallery">
                     <img src={projectImage} alt={projectName} />
-                    <img src={projectImage2} alt={projectName} />
                 </div>
                 <h2>{projectTags}</h2>
                 <p>{projectDesc}</p>
