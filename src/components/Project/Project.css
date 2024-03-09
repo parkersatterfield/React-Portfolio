@@ -40,10 +40,3 @@ h5 {
     text-decoration: none;
     color: black;
 }
-
-@media only screen and (max-width: 500px) {
-    .projectThumbnail {
-        width: 30px;
-        height: 30px;
-    }
-}
