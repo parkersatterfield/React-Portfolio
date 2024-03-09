@@ -45,12 +45,12 @@ function Home() {
                             <a class="fa fa-instagram" href="https://www.instagram.com/parker_satterfield/" target="_blank" rel="noreferrer"> </a>
                         </div>
                     </div>
-                    <Link to={'/mywork'} >
+                    <Link to={'/projects'} >
                         <motion.button
                             className='myWorkButton'
                             whileHover={{ scale: 1.06 }}
                             whileTap={{ scale: 0.95 }}>
-                            See My Work →
+                            Projects →
                         </motion.button>
                     </Link>
                 </div>

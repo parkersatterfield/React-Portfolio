@@ -7,7 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 import Nav from './components/Nav/Nav'
 import Home from './components/Home/Home'
 import Contact from './components/Contact/Contact'
-import MyWork from './components/MyWork/MyWork'
+import Projects from './components/Projects/Projects'
 import WorkDetail from './components/Work Detail/WorkDetail'
 import CaseStudy from './components/Case Study/CaseStudy'
 import { motion } from 'framer-motion'
@@ -28,7 +28,7 @@ function App() {
           </motion.div>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route exact path="/mywork" element={<MyWork />} />
+            <Route exact path="/projects" element={<Projects />} />
             <Route exact path="/contact" element={<Contact />} />
             <Route exact path="/project/*" element={<WorkDetail />} />
             <Route exact path="/casestudy/*" element={<CaseStudy />} />

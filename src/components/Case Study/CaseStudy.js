@@ -49,7 +49,7 @@ function CaseStudy() {
             <div className="notFound">
                 <div>
                     <h2>Case Study Not Found</h2>
-                    <a href="/mywork">Back to My Work</a>
+                    <a href="/projects">Back to Projects</a>
                 </div>
             </div>
         )

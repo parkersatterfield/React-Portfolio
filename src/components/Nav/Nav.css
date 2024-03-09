@@ -12,27 +12,29 @@
     margin-top: 4px;
 }
 
-.navLink, .navLink:visited {
+.navLink,
+.navLink:visited {
     color: var(--darkGray);
     text-decoration: none;
-    font-family: 'Linden Hill', serif; 
+    font-family: 'Linden Hill', serif;
     padding: 5px;
     transition: ease-in-out 0.3s;
 }
 
-.navLink:hover{
+.navLink:hover {
     color: var(--blue);
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;;
+    align-items: center;
+    ;
     background-color: transparent;
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
-    width: 85%;
+    width: 60%;
 }
 
 h4 {
@@ -44,7 +46,7 @@ h4 {
 
 .main {
     margin-top: 20px;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -52,7 +54,7 @@ h4 {
     text-decoration: underline;
     text-decoration-style: solid;
     color: var(--darkGray);
-    font-family: 'Linden Hill', serif; 
+    font-family: 'Linden Hill', serif;
     padding: 5px;
     transition: ease-in-out 0.3s;
 }
@@ -80,7 +82,7 @@ h4 {
     margin-bottom: 2px;
     border-radius: 5px;
     border-style: none;
-    padding:  8px 10px 8px 10px;
+    padding: 8px 10px 8px 10px;
     font-size: 12px;
 
     transition: ease-in-out 0.2s;

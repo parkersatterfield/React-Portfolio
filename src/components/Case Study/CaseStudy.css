@@ -25,18 +25,21 @@
     font-size: 30pt;
     font-weight: 600;
     transition: ease-in-out 0.18s;
-    width: 85%;
+    width: 60%;
 }
 
 .projectDetail span {
     transition: ease-in-out 0.2s;
 }
 
-.mainLink:hover, .secondLink:hover, .prototypeLink:hover {
+.mainLink:hover,
+.secondLink:hover,
+.prototypeLink:hover {
     color: var(--blue);
 }
 
-.mainLink:hover > span, .prototypeLink:hover > span {
+.mainLink:hover>span,
+.prototypeLink:hover>span {
     letter-spacing: 2px;
     margin-left: 8px;
 }
@@ -46,21 +49,21 @@
     font-size: 18pt;
     color: var(--blueHover);
     margin: 25px 0 0 0;
-    width: 85%;
+    width: 60%;
 }
 
 .projectDetail p {
     margin-bottom: 15px;
-    width: 85%;
+    width: 60%;
 }
 
 .secondLink {
     margin-top: 15px;
-    border-style: none;    
+    border-style: none;
     color: var(--blueHover);
     font-weight: 600;
     transition: ease-in-out 0.18s;
-    width: 85%;
+    width: 60%;
 }
 
 #storyboardImage {
@@ -82,7 +85,7 @@
 }
 
 .notFound div {
-    width: 85%;
+    width: 60%;
 }
 
 .notFound a {

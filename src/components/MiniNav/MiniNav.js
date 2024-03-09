@@ -4,11 +4,11 @@ import resume from '../Nav/Resume.pdf'
 import './MiniNav.css'
 import { useState } from 'react'
 import x from './x.svg'
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import { AnimatePresence } from 'framer-motion';
 
-function MiniNav () {
-    const transition = {duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}
+function MiniNav() {
+    const transition = { duration: 1, ease: [0.43, 0.13, 0.23, 0.96] }
 
     let location = useLocation().pathname;
 
@@ -16,7 +16,7 @@ function MiniNav () {
 
     const showNav = {
         hidden: {
-            y:"-100vh"
+            y: "-100vh"
         },
         visible: {
             y: "0",
@@ -29,51 +29,51 @@ function MiniNav () {
             }
         },
         exit: {
-            y:"-100vh"
+            y: "-100vh"
         }
     }
 
-    return(
+    return (
         <AnimatePresence
             initial={true}
             exitBeforeEnter={true}>
-            <motion.div 
-                variants= {showNav}
+            <motion.div
+                variants={showNav}
                 initial="hidden"
                 animate="visible"
                 exit="exit"
                 className="miniNavContainer">
                 <div className="miniNavHeader">
-                    <motion.img 
-                        exit={{rotate: 360}}
-                        initial={{rotate: 0}}
+                    <motion.img
+                        exit={{ rotate: 360 }}
+                        initial={{ rotate: 0 }}
                         animate={{ rotate: 360 }}
                         transition={transition}
-                        src={x} alt="x" 
-                        onClick={()=> setNavVisibility(false)}/>
+                        src={x} alt="x"
+                        onClick={() => setNavVisibility(false)} />
                 </div>
                 <div className="miniLinkContainer">
                     <Link
                         className={(location === '/') ? 'miniNavActive' : 'miniNavLink'}
                         to={"/"}
-                        >
+                    >
                         Home
                     </Link>
 
                     <Link
-                        className={(location === '/mywork') ? 'miniNavActive' : 'miniNavLink'}
-                        to={"/mywork"}
-                        >
-                        My Work
+                        className={(location === '/projects') ? 'miniNavActive' : 'miniNavLink'}
+                        to={"/projects"}
+                    >
+                        Projects
                     </Link>
 
                     <Link
                         className={(location === '/contact') ? 'miniNavActive' : 'miniNavLink'}
                         to={"/contact"}
-                        >
+                    >
                         Contact
                     </Link>
-                    
+
                     <a className="miniNavLink" href={resume} target="_blank" rel="noreferrer">Resume</a>
                 </div>
             </motion.div>

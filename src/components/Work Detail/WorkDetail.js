@@ -4,13 +4,9 @@ import { useLocation } from 'react-router';
 import Footer from '../Footer/Footer';
 import { motion } from 'framer-motion';
 
-// Dibs Images
+// Nav Cli Images
 import navCliImage from "../../images/NavCLI.png"
 import navCliGif from "../../images/NavCLI.gif"
-
-// Dibs Images
-import dibsImage from "../../images/Dibs.png"
-import dibsImage2 from "../../images/Dibs2.png"
 
 // XML to SQL Images
 import xmltosqlImage from "../../images/XMLtoSQL.png"
@@ -24,12 +20,6 @@ const navCliLink2Desc = "<See the Code />"
 const navCliDesc = 'I always found navigating files from the command line cumbersome, so I designed a tool to make it better. I uploaded this project as an NPM package so users could easily download the package, and I could easily update the project without worrying about users getting the installing version.'
 const navCliTags = 'Node.js, npm, Product Hunt'
 
-// Dibs Project Info
-const dibsName = "Dibs"
-const dibsLink = "https://dibsfunding.com/"
-const dibsDesc = 'While working at my first job out of school, I decided I wanted to pursue a startup project that my friend and I had been working on for a little while. Without knowing anything about web design, I decided to try and learn how to code and build an MVP using bubble.io. Dibs is an online social networking and seed funding platform for early stage startups.'
-const dibsTags = 'Startups, Product Design, UI/UX'
-
 // XML to SQL Info
 const xmltosqlName = "XML to SQL"
 const xmltosqlLink = "https://www.xmltosql.com"
@@ -38,7 +28,7 @@ const xmltosqlDesc = 'While working at Fieldster, I build an internal tool to he
 const xmltosqlLink2Desc = "<See the Code />"
 const xmltosqlTags = 'React, SQL, Node'
 
-function MyWork() {
+function Projects() {
     let projectName = '';
     let projectLink = '';
     let projectLink2 = '';
@@ -55,14 +45,7 @@ function MyWork() {
 
     let location = useLocation().pathname;
 
-    if (location === '/project/dibs') {
-        projectName = dibsName;
-        projectLink = dibsLink;
-        projectDesc = dibsDesc;
-        projectTags = dibsTags;
-        projectImage = dibsImage;
-        projectImage2 = dibsImage2;
-    } else if (location === '/project/navCli') {
+    if (location === '/project/navCli') {
         projectName = navCliName;
         projectLink = navCliLink;
         projectLink2 = navCliLink2;
@@ -85,7 +68,7 @@ function MyWork() {
             <div className="notFound">
                 <div>
                     <h2>Project Not Found</h2>
-                    <a href="/mywork">Back to My Work</a>
+                    <a href="/projects">Back to Projects</a>
                 </div>
             </div>
         )
@@ -113,4 +96,4 @@ function MyWork() {
     )
 }
 
-export default MyWork;
+export default Projects;

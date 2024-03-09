@@ -18,7 +18,8 @@
     width: fit-content;
 }
 
-.imageGallery img:hover, .imageGallery img:active {
+.imageGallery img:hover,
+.imageGallery img:active {
     pointer-events: none;
 }
 
@@ -36,18 +37,19 @@
     font-size: 30pt;
     font-weight: 600;
     transition: ease-in-out 0.18s;
-    width: 85%;
+    width: 60%;
 }
 
 .projectDetail span {
     transition: ease-in-out 0.2s;
 }
 
-.mainLink:hover, .secondLink:hover {
+.mainLink:hover,
+.secondLink:hover {
     color: var(--blue);
 }
 
-.mainLink:hover > span {
+.mainLink:hover>span {
     letter-spacing: 2px;
     margin-left: 8px;
 }
@@ -57,21 +59,21 @@
     font-size: 12pt;
     color: var(--blueHover);
     margin: 25px 0 0 0;
-    width: 85%;
+    width: 60%;
 }
 
 .projectDetail p {
     margin-bottom: 75px;
-    width: 85%;
+    width: 60%;
 }
 
 .secondLink {
     margin-top: 15px;
-    border-style: none;    
+    border-style: none;
     color: var(--blueHover);
     font-weight: 600;
     transition: ease-in-out 0.18s;
-    width: 85%;
+    width: 60%;
 }
 
 .notFound {
@@ -80,7 +82,7 @@
 }
 
 .notFound div {
-    width: 85%;
+    width: 60%;
 }
 
 .notFound a {
