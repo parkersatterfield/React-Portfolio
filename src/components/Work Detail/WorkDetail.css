@@ -95,4 +95,12 @@
     .mainLink {
         font-size: 20pt;
     }
+
+    .mainLink,
+    .projectDetail h2,
+    .projectDetail p,
+    .secondLink,
+    .notFound div {
+        width: 85%;
+    }
 }

@@ -54,10 +54,6 @@ h5 {
         width: fit-content;
     }
 
-    .projectContainer {
-        width: 60%
-    }
-
     .workProjects {
         display: flex;
         justify-content: space-between;
@@ -65,5 +61,11 @@ h5 {
 
     .workProjectCard {
         width: 40%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .projectContainer {
+        width: 85%;
     }
 }

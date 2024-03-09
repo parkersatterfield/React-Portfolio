@@ -164,6 +164,7 @@
 
     .home {
         align-items: flex-start;
+        width: 85%;
     }
 
     .homeLeft {
@@ -173,5 +174,4 @@
     .homeRight {
         width: 80%;
     }
-
 }
