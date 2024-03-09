@@ -112,6 +112,10 @@
 }
 
 @media screen and (max-width: 1000px) {
+    .homeTop {
+        margin-top: 15px;
+    }
+
     .home span {
         font-size: 62px;
     }
