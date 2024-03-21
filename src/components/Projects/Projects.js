@@ -10,15 +10,16 @@ import fieldsterThumbNail from '../../images/FieldsterThumb.png';
 import navThumbNail from '../../images/NavThumb.png';
 import xmlToSqlThumbNail from '../../images/XMLtoSQLThumb.png';
 import strikeThumbNail from '../../images/StrikeThumb.png';
+import multiLangThumbNail from '../../images/MultiLangThumb.png';
 
 // Project Links
 const navCliLink = "/project/navCli"
 const strikeLink = "/casestudy/strike"
 const xmltosqlLink = "/project/xmltosql"
 
-const fieldsterProjectDescription = "This automation spins up a new environment for the trial customer with their own database to allow customers to import their own data and use the free trial as if they were a customer. It integrates with the sales pipeline to improve conversion."
+const fieldsterProjectDescription = "This feature spins up a new environment and database for the trial customer to allow them to import their own data and use the Fieldster CRM as if they were a customer. It integrates with the sales pipeline to improve conversion."
 
-const holdingsIqProjectDescription = "One way to leverages their vast databases is to provide APIs that customers can use to manage their data and implement their own solutions. Many of these endpoints are driven by services that my team and I manage."
+const holdingsIqProjectDescription = "One way EBSCO leverages their vast knowledge-base of data is to provide APIs that customers can use to manage their data and implement their own solutions. Many of these endpoints are driven by services that my team and I manage."
 
 function Projects() {
     const transition = { duration: 1, ease: [0.43, 0.13, 0.23, 0.96] }
@@ -82,6 +83,14 @@ function Projects() {
                             projectOwner='Parker Satterfield'
                             projectTime='2022'
                             projectDescription='Product concept for a social media golfing mobile app.'
+                        />
+                        <Project
+                            projectName='MultiLang 🚧'
+                            projectThumbnail={multiLangThumbNail}
+                            projectLink="https://github.com/parkersatterfield/multilang/blob/main/multilang.ipynb"
+                            projectOwner='Parker Satterfield'
+                            projectTime='2024'
+                            projectDescription='Multi-label text classification model for identifying all languages within a string.'
                         />
                     </div>
                 </div>
