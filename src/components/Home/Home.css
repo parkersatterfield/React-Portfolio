@@ -3,11 +3,11 @@
 }
 
 .home {
+    display: flex;
     width: 60%;
-    height: 100vh;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .myWorkButton {
@@ -112,10 +112,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .homeTop {
-        margin-top: 15px;
-    }
-
     .home span {
         font-size: 62px;
     }
