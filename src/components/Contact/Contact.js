@@ -1,5 +1,4 @@
 import './Contact.css'
-import blob from './blob.svg'
 import logo from '../Nav/logo.svg'
 import axios from 'axios';
 import { useState } from 'react';
